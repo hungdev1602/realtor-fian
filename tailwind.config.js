@@ -17,7 +17,11 @@ export default {
       "xl": "1160px",
       "2xl": "1620px"
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg1': "url('/images/bg-1.png')",
+      },
+    },
   },
   plugins: [],
 }
