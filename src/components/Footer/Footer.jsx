@@ -63,7 +63,7 @@ const Footer = () => {
 
               <div className="mt-[70px]">Навигация</div>
               <div className="grid grid-cols-3 gap-[5px] mt-[20px] w-[651px]">
-                <Link to={'/'} className="text-[#fff]">Об основателе</Link>
+                <Link to={'/info'} className="text-[#fff]">Об основателе</Link>
                 <Link to={'/about'} className="text-[#fff]">Кейсы</Link>
                 <Link to={'/services'} className="text-[#fff]">Преимущества</Link>
                 <Link to={'/news'} className="text-[#fff]">Цифры</Link>
