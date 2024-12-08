@@ -1,0 +1,132 @@
+import { Link } from "react-router-dom"
+import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/ServiceInfoType1"
+import commercial from "/images/commercial_1.png"
+import ServiceDetailType1 from "../../components/ServiceDetail/ServiceDetailType1/ServiceDetailType1"
+import commercial1 from "/images/commercial_2.png"
+import ServiceDetailType2 from "../../components/ServiceDetail/ServiceDetailType2/ServiceDetailType2"
+import commercial2 from "/images/commercial_3.png"
+import FormEmail from "../../components/FormEmail/FormEmail"
+const CommercialRealEstatePage = () => {
+  const cards = ["покупка", "продажа", "упаковка", "готовые арендные бизнесы"]
+  const choice = [
+    {
+      id: "1",
+      title: `Оценка 
+      объекта`
+    },
+    {
+      id: "2",
+      title: `Проф. съемка 
+      объекта`
+    },
+    {
+      id: "3",
+      title: `Рекламное 
+      продвижение`
+    },
+    {
+      id: "4",
+      title: `Переговоры с 
+      покупателем`
+    },
+    {
+      id: "5",
+      title: `Проверка и подготовка 
+      документов`
+    },
+    {
+      id: "6",
+      title: `Организация, согласование 
+      и сопровождение сделки`
+    },
+    {
+      id: "7",
+      title: `Передача 
+      объекта`
+    },
+  ]
+  const choice2 = [
+    {
+      id: "1",
+      title: `Поиск и подбор`
+    },
+    {
+      id: "2",
+      title: `Полная проверка 
+      сделки`
+    },
+    {
+      id: "3",
+      title: `Полный анализ`
+    },
+    {
+      id: "4",
+      title: `Оценка окупаемости 
+      и доходности`
+    },
+    {
+      id: "5",
+      title: `Согласование 
+      условий`
+    },
+    {
+      id: "6",
+      title: `Наилучшие 
+      условия и цена`
+    },
+    {
+      id: "7",
+      title: `Оформление 
+      сделки`
+    },
+    {
+      id: "8",
+      title: `Передача объекта 
+      в управление(по запросу)`
+    }
+  ]
+  return (
+    <>
+      <div className="container mx-auto mt-[40px]">
+        {/* Sub link */}
+        <span className="p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[24px]">
+          <Link to={'/'}>Основное</Link>
+          /
+          <Link to={'/info'}>Наши услуги</Link>
+          /
+          <Link to={'/commercial'}>Коммерческая недвижимость</Link>
+        </span>
+
+        <ServiceInfoType1 
+          card={cards}
+          title={"Коммерческая недвижимость"}
+          minititle={"коммерческого помещения"}
+          image={commercial}
+          btnTitle={'Консультация'}
+        />
+
+        <ServiceDetailType1 
+          choice={choice}
+          bg={"bg-[#A2999E] text-[#fff]"}
+          title={'Продажа коммерческой недвижимости'}
+          subtitle={'Выгодная продажа за короткий срок.'}
+          btnTitle={'Продать'}
+          image={commercial1}
+        />
+
+        <ServiceDetailType2 
+          title={'Арендный бизнес'}
+          desc={`Покупка готового арендного бизнеса, который 
+            сразу приносит доход.`}
+          choice={choice2}
+          btnTitle={'Купить'}
+          image={commercial2}
+        />
+
+        <FormEmail />
+      </div>
+    </>
+  )
+}
+
+export default CommercialRealEstatePage

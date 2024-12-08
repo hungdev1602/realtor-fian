@@ -13,8 +13,23 @@ const Header = () => {
             <div className="flex items-center gap-[40px] py-[39px] px-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)]">
               <Link to={'/info'} className="">Об основателе</Link>
               <Link to={'/'} className="">Цифры</Link>
-              <Link to={'/'} className="">Кейсы</Link>
-              <Link to={'/'} className="">Услуги</Link>
+              <div className="group relative">
+                <div className="cursor-pointer">Кейсы •</div>
+                <div className="absolute left-[-15px] hidden group-hover:block w-[300px] text-[20px] bg-white shadow-md rounded-md">
+                  <Link to={'/case1'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Кейс 1</Link>
+                  <Link to={'/case2'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Кейс 2</Link>
+                  <Link to={'/case3'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Кейс 3</Link>
+                </div>
+              </div>
+              <div className="group relative">
+                <div className="cursor-pointer">Услуги •</div>
+                <div className="absolute left-[-15px] hidden group-hover:block w-[300px] text-[20px] bg-white shadow-md rounded-md">
+                  <Link to={'/commercial'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Коммерческая недвижимость</Link>
+                  <Link to={'/residential'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Жилая недвижимость</Link>
+                  <Link to={'/investments'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Инвестиции в недвижимость</Link>
+                  <Link to={'/redevelopment'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Перепланировка и реконструкции</Link>
+                </div>
+              </div>
               <Link to={'/'} className="">Преимущества</Link>
             </div>
   

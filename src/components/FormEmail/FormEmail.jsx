@@ -31,10 +31,10 @@ const FormEmail = () => {
                   type="checkbox" 
                   className="w-[30px] h-[30px] cursor-pointer"
                 />
-                <label htmlFor="policy" className="text-[#00000099] cursor-pointer">Политика конфиденциальности</label>
+                <label htmlFor="policy" className="text-[#00000099] text-[16px] cursor-pointer">Политика конфиденциальности</label>
               </div>
 
-              <button className="mt-[26px] inline-block py-[24px] px-[37px] bg-[#333333] text-[#fff] rounded-[20px]">
+              <button className="mt-[26px] inline-block py-[24px] px-[37px] bg-[#333333] text-[16px] text-[#fff] rounded-[20px]">
                 Получить консультацию
               </button>
             </form>
