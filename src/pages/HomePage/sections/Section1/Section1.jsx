@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { FaAngleRight } from "react-icons/fa6";
 import founder from "/images/Founder_1.png"
 import './styles.scss'
-import BoxInfoTransparent from "../../../components/BoxInfoTransparent/BoxInfoTransparent";
+import BoxInfoTransparent from "../../../../components/BoxInfoTransparent/BoxInfoTransparent";
 const Section1 = () => {
   return (
     <>
@@ -32,7 +32,7 @@ const Section1 = () => {
 
         <div className="w-[830px] mt-[-431px]">
           <div className="grid grid-cols-3 gap-[40px]">
-            <BoxInfoTransparent 
+            <BoxInfoTransparent
               widthHeight={'w-[250px] h-[296px]'}
               text={'35 лет'}
               desc={'на рынке'}

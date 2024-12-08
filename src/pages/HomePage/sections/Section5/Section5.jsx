@@ -1,5 +1,6 @@
-import AdvantageItem from "../../../components/AdvantageItem/AdvantageItem"
-import Title from "../../../components/Title/Title"
+import AdvantageItem from "../../../../components/AdvantageItem/AdvantageItem"
+import Title from "../../../../components/Title/Title"
+
 import advantage1 from "/images/advantage_1.png"
 import advantage2 from "/images/advantage_2.png"
 import advantage3 from "/images/advantage_3.png"

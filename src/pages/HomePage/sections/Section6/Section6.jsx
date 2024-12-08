@@ -1,5 +1,6 @@
-import FAQItem from "../../../components/FAQItem/FAQItem"
-import Title from "../../../components/Title/Title"
+
+import FAQItem from "../../../../components/FAQItem/FAQItem"
+import Title from "../../../../components/Title/Title"
 
 const Section6 = () => {
   return (

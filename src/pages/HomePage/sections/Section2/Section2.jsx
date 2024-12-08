@@ -1,5 +1,5 @@
-import Slider from "../../../components/Slider/Slider"
-import Title from "../../../components/Title/Title"
+import Slider from "../../../../components/Slider/Slider"
+import Title from "../../../../components/Title/Title"
 
 const Section2 = () => {
   return (

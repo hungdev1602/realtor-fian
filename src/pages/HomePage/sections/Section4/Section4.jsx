@@ -1,10 +1,11 @@
-import ServiceItem from "../../../components/ServiceItem/ServiceItem"
-import Title from "../../../components/Title/Title"
+
 import service1 from "/images/service_1.png"
 import service2 from "/images/service_2.png"
 import service3 from "/images/service_3.png"
 import service4 from "/images/service_4.png"
 import discount from "/images/discount.png"
+import ServiceItem from "../../../../components/ServiceItem/ServiceItem"
+import Title from "../../../../components/Title/Title"
 const Section4 = () => {
   return (
     <>
