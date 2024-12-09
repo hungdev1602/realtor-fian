@@ -15,10 +15,10 @@ const Slider = () => {
         slidesPerView={5}
         spaceBetween={30}
         loop={true} //important for autoplay
-        speed={5000} //important for autoplay
+        speed={2000} //important for autoplay
         autoplay={{ //important for autoplay
           // enabled: true,
-          delay: 1,
+          delay: 0,
           disableOnInteraction: false
         }}
         modules={[Autoplay]} //important for autoplay

@@ -11,6 +11,16 @@ import ServiceDetailType2 from "../../components/ServiceDetail/ServiceDetailType
 import FormEmail from "../../components/FormEmail/FormEmail"
 const ResidentialPage = () => {
   const cards = ["новостройки", "вторичный рынок"]
+  const minititle = [
+    {
+      title: "От 1 дня до 2х месяцев",
+      desc: "Подбор квартиры"
+    },
+    {
+      title: "От 1 дня до 6 месяцев",
+      desc: "Продажа квартиры"
+    }
+  ]
   const choice = [
     {
       id: "1",
@@ -135,7 +145,8 @@ const ResidentialPage = () => {
         <ServiceInfoType1 
           card={cards}
           title={"Жилая недвижимость"}
-          minititle={"квартиры"}
+          subtitle={'Услуги по покупке и продажи жилой недвижимости'}
+          minititle={minititle}
           image={residential}
           btnTitle={'Консультация'}
         />

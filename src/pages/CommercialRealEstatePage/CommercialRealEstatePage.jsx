@@ -8,6 +8,16 @@ import commercial2 from "/images/commercial_3.png"
 import FormEmail from "../../components/FormEmail/FormEmail"
 const CommercialRealEstatePage = () => {
   const cards = ["покупка", "продажа", "упаковка", "готовые арендные бизнесы"]
+  const minititle = [
+    {
+      title: "От 1 дня до 2х месяцев",
+      desc: "Подбор коммерческого помещения"
+    },
+    {
+      title: "От 1 дня до 6 месяцев",
+      desc: "Продажа коммерческого помещения"
+    }
+  ]
   const choice = [
     {
       id: "1",
@@ -100,7 +110,7 @@ const CommercialRealEstatePage = () => {
         <ServiceInfoType1 
           card={cards}
           title={"Коммерческая недвижимость"}
-          minititle={"коммерческого помещения"}
+          minititle={minititle}
           image={commercial}
           btnTitle={'Консультация'}
         />
