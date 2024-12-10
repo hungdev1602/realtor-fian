@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom"
 import { MortgageItem } from "../../../../components/MortgageItem/MortgageItem"
 import Title from "../../../../components/Title/Title"
-import test from "/images/advantage_2.png"
 import { FaArrowRightLong } from "react-icons/fa6";
+import mortgage1 from "/images/mortgage_1.svg"
+import mortgage2 from "/images/mortgage_2.svg"
+import mortgage3 from "/images/mortgage_3.svg"
+import mortgage4 from "/images/mortgage_4.svg"
+import mortgage5 from "/images/mortgage_5.svg"
 
 const Section3 = () => {
   return (
@@ -15,31 +19,31 @@ const Section3 = () => {
             title={'Быстрое одобрение ипотеки'}
             desc={`После подачи заявки ответ может быть 
               предоставлен в течение 2-х часов`}
-            image={test}
+            image={mortgage1}
           />
           <MortgageItem 
             title={'Подбор выгодных условий'}
             desc={`Из множества банковских предложений мы 
               определим самое подходящее для вас`}
-            image={test}
+            image={mortgage2}
           />
           <MortgageItem 
             title={'Индивидуальный подход'}
             desc={`Мы адаптируемся к решению вашего запроса, 
               учитывая все рыночные возможности`}
-            image={test}
+            image={mortgage3}
           />
           <MortgageItem 
             title={'Согласуем после отказов'}
             desc={`Найдем оптимальное предложение, даже 
               если есть серьезные причины для отказа`}
-            image={test}
+            image={mortgage4}
           />
           <MortgageItem 
             title={'Крупная сумма'}
             desc={`С нами вы можете рассчитывать на максимум. 
               Одобрим любую необходимую вам сумму`}
-            image={test}
+            image={mortgage5}
           />
           <div className="w-[520px] h-[250px] bg-[#8F4449] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[20px] flex items-center justify-center relative">
             <div className="text-[32px] font-[600] text-[#fff]">Получить ипотеку</div>

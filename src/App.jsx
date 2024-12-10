@@ -10,10 +10,12 @@ import RedevelopmentPage from "./pages/RedevelopmentPage/RedevelopmentPage";
 import Case1Page from "./pages/Case1Page/Case1Page";
 import Case2Page from "./pages/Case2Page/Case2Page";
 import Case3Page from "./pages/Case3Page/Case3Page";
+import ScrollToTop from "./ScrollToTop";
 const App = () => {
   return (
     <>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/info" element={<InfoPage />} />

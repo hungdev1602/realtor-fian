@@ -26,6 +26,7 @@ const Section4 = () => {
               вторичный рынок и новостройки`}
             image={service2}
             link={"#"}
+            delayTime={500}
           />
           <ServiceItem 
             title={"Инвестиции в недвижимость"}
@@ -40,6 +41,7 @@ const Section4 = () => {
               повысим ее инвестиционную привлекательность`}
             image={service4}
             link={"#"}
+            delayTime={500}
           />
         </div>
 

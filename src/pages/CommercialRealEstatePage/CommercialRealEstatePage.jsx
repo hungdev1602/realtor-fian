@@ -3,9 +3,10 @@ import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/Serv
 import commercial from "/images/commercial_1.png"
 import ServiceDetailType1 from "../../components/ServiceDetail/ServiceDetailType1/ServiceDetailType1"
 import commercial1 from "/images/commercial_2.png"
-import ServiceDetailType2 from "../../components/ServiceDetail/ServiceDetailType2/ServiceDetailType2"
 import commercial2 from "/images/commercial_3.png"
+import commercial3 from "/images/commercial_4.png"
 import FormEmail from "../../components/FormEmail/FormEmail"
+import Section3 from "./sections/Section3/Section3"
 const CommercialRealEstatePage = () => {
   const cards = ["покупка", "продажа", "упаковка", "готовые арендные бизнесы"]
   const minititle = [
@@ -124,13 +125,14 @@ const CommercialRealEstatePage = () => {
           image={commercial1}
         />
 
-        <ServiceDetailType2 
+        <Section3 
           title={'Арендный бизнес'}
           desc={`Покупка готового арендного бизнеса, который 
             сразу приносит доход.`}
           choice={choice2}
           btnTitle={'Купить'}
-          image={commercial2}
+          image1={commercial2}
+          image2={commercial3}
         />
 
         <FormEmail />
