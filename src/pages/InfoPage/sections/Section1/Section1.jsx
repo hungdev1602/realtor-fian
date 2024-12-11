@@ -10,8 +10,8 @@ const Section1 = () => {
         <div className="flex gap-[200px]">
           {/* Left */}
           <div className="flex-1">
-            <div className="text-[64px] font-[400] font-avenir ">Наталья Фадеева</div>
-            <div className="text-[24px] font-[400] mt-[-5px]">Основатель инвест – агенства по недвижимости FIAN</div>
+            <div className="text-[63px] font-[400] font-avenir ">Наталья Фадеева</div>
+            <div className="text-[23px] font-[400] mt-[-5px]">Основатель инвест – агенства по недвижимости FIAN</div>
             <div className="flex items-center gap-[7px] mt-[15px] text-[20px] font-[400]">
               <FaCheck style={{ color: '#8F4449'}}/> Партнер национального центра реконструкций и перепланировок
             </div>

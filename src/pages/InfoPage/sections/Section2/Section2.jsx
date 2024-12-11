@@ -31,18 +31,26 @@ const Section2 = () => {
           <ExperienceItem 
             year={'1989 - 2000'}
             text={text1}
+            start={120}
+            end={0}
           />
           <ExperienceItem 
             year={'2000-2010'}
             text={text2}
+            start={80}
+            end={180}
           />
           <ExperienceItem 
             year={'2010-2020'}
             text={text3}
+            start={120}
+            end={0}
           />
           <ExperienceItem 
             year={'2020-2024'}
             text={text4}
+            start={80}
+            end={180}
           />
         </div>
       </div>

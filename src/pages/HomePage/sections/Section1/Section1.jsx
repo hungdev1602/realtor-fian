@@ -7,9 +7,9 @@ const Section1 = () => {
   return (
     <>
       <div className="">
-        <div className="flex justify-between gap-[116px]">
+        <div className="flex justify-between gap-[100px]">
           {/* Left */}
-          <div className="w-[52%] font-avenir text-[53px]">
+          <div className="w-[55%] font-avenir text-[52px]">
             <div className="uppercase">Ваш путь к </div>
             <div className="uppercase font-[700] mt-[-5px]">идеальной недвижимости</div>
             <div className="uppercase mt-[-5px]">начинается здесь</div>

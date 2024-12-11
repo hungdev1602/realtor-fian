@@ -19,8 +19,8 @@ const Section4 = () => {
               арендные бизнесы для инвесторов`}
             image={service1}
             link={"/commercial"}
-            start={2184}
-            end={2240}
+            start={150}
+            end={0}
           />
           <ServiceItem 
             title={"Жилая недвижимость"}
@@ -28,6 +28,8 @@ const Section4 = () => {
               вторичный рынок и новостройки`}
             image={service2}
             link={"/residential"}
+            start={80}
+            end={120}
           />
           <ServiceItem 
             title={"Инвестиции в недвижимость"}
@@ -35,6 +37,8 @@ const Section4 = () => {
               обеспечиваем высокую доходность`}
             image={service3}
             link={"/investments"}
+            start={150}
+            end={0}
           />
           <ServiceItem 
             title={"Перепланировка и реконструкция"}
@@ -42,6 +46,8 @@ const Section4 = () => {
               повысим ее инвестиционную привлекательность`}
             image={service4}
             link={"/redevelopment"}
+            start={80}
+            end={120}
           />
         </div>
 
