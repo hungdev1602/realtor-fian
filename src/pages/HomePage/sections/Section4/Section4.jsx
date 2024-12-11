@@ -18,30 +18,30 @@ const Section4 = () => {
             desc={`Покупка, продажа, упаковка, готовые 
               арендные бизнесы для инвесторов`}
             image={service1}
-            link={"#"}
+            link={"/commercial"}
+            start={2184}
+            end={2240}
           />
           <ServiceItem 
             title={"Жилая недвижимость"}
             desc={`Услуги по покупке и продажи жилой недвижимости: 
               вторичный рынок и новостройки`}
             image={service2}
-            link={"#"}
-            delayTime={500}
+            link={"/residential"}
           />
           <ServiceItem 
             title={"Инвестиции в недвижимость"}
             desc={`Минимизируем риски и 
               обеспечиваем высокую доходность`}
             image={service3}
-            link={"#"}
+            link={"/investments"}
           />
           <ServiceItem 
             title={"Перепланировка и реконструкция"}
             desc={`Оптимизируем вашу недвижимость и 
               повысим ее инвестиционную привлекательность`}
             image={service4}
-            link={"#"}
-            delayTime={500}
+            link={"/redevelopment"}
           />
         </div>
 

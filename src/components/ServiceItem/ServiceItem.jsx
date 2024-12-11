@@ -1,26 +1,31 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom"
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useState, useEffect } from 'react'
 const ServiceItem = (props) => {
+  const [scrollPosition, setScrollPosition] = useState(0)
+
+  useEffect(() => {
+    const updatePosition = () => {
+      setScrollPosition(window.pageYOffset)
+    }
+    window.addEventListener('scroll', updatePosition)
+    return () => window.removeEventListener('scroll', updatePosition)
+  }, [])
+  
   const {
     title,
     desc,
     image,
     link,
-    delayTime
+    start,
+    end
   } = props
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  })
+  console.log(scrollPosition)
   return (
     <>
       <div 
-        className="w-[790px] h-[299px] rounded-[20px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] px-[40px] pt-[40px] relative" 
-        data-aos="flip-up"
-        data-aos-delay={delayTime}
+        className={`w-[790px] h-[299px] rounded-[20px] ${scrollPosition > start && scrollPosition < end ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]' : ''} transition-shadow duration-1000 px-[40px] pt-[40px] relative`} 
       >
         <div className="text-[42px] font-[500]">{title}</div>
         <div className="text-[18px] font-[400] mt-[20px] whitespace-pre-line">{desc}</div>
@@ -41,3 +46,4 @@ const ServiceItem = (props) => {
 }
 
 export default ServiceItem
+
