@@ -3,12 +3,12 @@ import Title from "../../../../components/Title/Title"
 
 const Section2 = () => {
   return (
-    <div className="mt-[120px]">
+    <div className="mt-[80px] sm:mt-[120px]">
       <div className="container mx-auto">
         <Title title="Партнеры" />
       </div>
 
-      <div className="h-[150px] bg-[#A2999E] flex items-center">
+      <div className="h-[90px] sm:h-[120px] lg:h-[150px] bg-[#A2999E] rounded-[0px] sm:rounded-[20px] flex items-center">
         <Slider />
       </div>
     </div>

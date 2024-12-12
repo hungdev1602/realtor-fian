@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import ServiceInfoType2 from "../../components/ServiceInfo/ServiceInfoType2/ServiceInfoType2"
 import redevelopment from "/images/redevelopment_1.png" 
 import redevelopment1 from "/images/redevelopment_2.png" 
+import risk1_hover from "/images/risk_1-hover.png"
 import risk2 from "/images/risk_2.png"
 import risk3 from "/images/risk_3.png"
 import risk4 from "/images/risk_4.png"
@@ -100,6 +101,7 @@ const RedevelopmentPage = () => {
                 всех аспектов 
                 проектируемых изменений.`}
               image={risk2}
+              image2={risk1_hover}
             />
             <RiskItem 
               title={'Тех. экспертиза'}

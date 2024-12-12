@@ -12,7 +12,7 @@ const Slider = () => {
   return (
     <>
       <Swiper
-        slidesPerView={5}
+        slidesPerView={(window.innerWidth > 576) ? 5 : 3}
         spaceBetween={30}
         loop={true} //important for autoplay
         speed={2000} //important for autoplay
@@ -25,25 +25,25 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pepsi} alt="" />
+          <img src={pepsi} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pepsi} alt="" />
+          <img src={pepsi} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={pepsi} alt="" />
+          <img src={pepsi} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className="w-[132px] h-[53px] sm:w-[220px] sm:h-[80px] 2xl:w-[250px] 2xl:h-[100px] object-contain"/>
         </SwiperSlide>
       </Swiper>
     </>
@@ -51,5 +51,4 @@ const Slider = () => {
 }
 
 export default Slider
-
 

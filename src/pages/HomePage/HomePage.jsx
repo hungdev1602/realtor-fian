@@ -10,7 +10,7 @@ const HomePage = () => {
   
   return (
     <>
-      <div className="mt-[100px] container mx-auto">
+      <div className="mt-[40px] sm:mt-[60px] lg:mt-[100px] container mx-auto">
         <Section1 />
       </div>
       <Section2 />

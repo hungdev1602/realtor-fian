@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom"
 import logo from "/images/logo.svg"
+import { RxHamburgerMenu } from "react-icons/rx";
+
 const Header = () => {
   return (
     <>
-      <header className=" py-[20px] sticky top-0 left-0 right-0 bg-[#f8f8f8f3] z-[999]">
+      <header className="py-[10px] sm:py-[20px] sticky top-0 left-0 right-0 bg-[#f3f3f3] z-[999]">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
-            <Link to='/'>
-              <img src={logo} alt="" />
+            <Link to='/' className="w-[28px] h-[32px] sm:w-[60px] sm:h-[70px] 2xl:w-[73px] 2xl:h-[83px]">
+              <img 
+                src={logo} 
+                alt="" 
+                className="w-full h-full object-cover"
+              />
             </Link>
   
-            <div className="flex items-center gap-[40px] py-[39px] px-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)]">
+            <div className="hidden lg:flex items-center gap-[40px] p-[30px] 2xl:p-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)]">
               <Link to={'/info'} className="">Об основателе</Link>
               <Link to={'/'} className="">Цифры</Link>
               <div className="group relative">
@@ -33,9 +39,15 @@ const Header = () => {
               <Link to={'/'} className="">Преимущества</Link>
             </div>
   
-            <Link to='/' className="inline-block py-[14px] px-[81px] text-[#fff] bg-[#333333] rounded-[15px]">
-              Связаться
-            </Link>
+            <div className="flex items-center gap-[20px]">
+              <Link to='/' className="inline-block py-[9px] sm:py-[14px] px-[20px] sm:px-[40px] lg:px-[70px] 2xl:px-[81px] text-[10px] sm:text-[16px] text-[#fff] bg-[#333333] rounded-[10px] sm:rounded-[15px]">
+                Связаться
+              </Link>
+  
+              <button className="inline-block lg:hidden">
+                <RxHamburgerMenu size={25}/>
+              </button>
+            </div>
           </div>
         </div>
       </header>
