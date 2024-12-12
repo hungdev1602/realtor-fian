@@ -8,10 +8,10 @@ import advantage4 from "/images/advantage_4.png"
 const Section5 = () => {
   return (
     <>
-      <div className="mt-[120px]">
+      <div className="mt-[80px] sm:mt-[120px]">
         <Title title={'Наши преимущества'}/>
 
-        <div className="grid grid-cols-4 gap-[20px]">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-[10px] 2xl:gap-[20px]">
           <AdvantageItem 
             title={'Основатель'}
             desc={`Основатель компании является 
