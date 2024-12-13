@@ -6,10 +6,10 @@ import risk1_hover from "/images/risk_1-hover.png"
 import risk2 from "/images/risk_2.png"
 import risk3 from "/images/risk_3.png"
 import risk4 from "/images/risk_4.png"
-import ServiceDetailType1 from "../../components/ServiceDetail/ServiceDetailType1/ServiceDetailType1"
 import FormEmail from "../../components/FormEmail/FormEmail"
 import Title from "../../components/Title/Title"
 import RiskItem from "../../components/RiskItem/RiskItem"
+import Section2 from "./sections/Section2/Section2"
 const RedevelopmentPage = () => {
   const checkedItem = ["Оптимизация вашей недвижимости", "Повышаем инвестиционную привлекательность", "Без юридических и финансовых рисков"]
   const minititle = [
@@ -80,10 +80,10 @@ const RedevelopmentPage = () => {
           btnTitle={'Консультация'}
         />
 
-        <ServiceDetailType1 
+        <Section2 
           choice={choice}
           bg={"bg-[#E8E7E7] text-[#333] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"}
-          title={'Продажа жилой недвижимости'}
+          title={'Модернизируй свой бизнес'}
           subtitle={`Оптимизируем вашу недвижимость и повысим ее 
             инвестиционную привлекательность.`}
           btnTitle={'Модернизировать'}

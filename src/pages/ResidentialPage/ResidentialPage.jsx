@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/ServiceInfoType1"
-import ServiceDetailType1 from "../../components/ServiceDetail/ServiceDetailType1/ServiceDetailType1"
 import residential from "/images/residential_1.png"
 import residential1 from "/images/residential_2.png"
 import residential2 from "/images/residential_3.png"
 import residential3 from "/images/residential_4.png"
 import Section3 from "./sections/Section3/Section3"
-import ServiceDetailType3 from "../../components/ServiceDetail/ServiceDetailType3/ServiceDetailType3"
-import ServiceDetailType2 from "../../components/ServiceDetail/ServiceDetailType2/ServiceDetailType2"
 import FormEmail from "../../components/FormEmail/FormEmail"
+import Section2 from "./sections/Section2/Section2"
+import Section4 from "./sections/Section4/Section4"
+import Section5 from "./sections/Section5/Section5"
 const ResidentialPage = () => {
   const cards = ["новостройки", "вторичный рынок"]
   const minititle = [
@@ -151,7 +151,7 @@ const ResidentialPage = () => {
           btnTitle={'Консультация'}
         />
 
-        <ServiceDetailType1 
+        <Section2 
           choice={choice}
           bg={"bg-[#E8E7E7] text-[#333] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"}
           title={'Продажа жилой недвижимости'}
@@ -163,7 +163,7 @@ const ResidentialPage = () => {
 
         <Section3 />
         
-        <ServiceDetailType3 
+        <Section4 
           title={'Покупка квартиры на вторичном рынке'}
           desc={`Гарантия безопасности и комфорта, никаких забот, 
             только выгода. Найдем именно ваше жилье`}
@@ -172,10 +172,10 @@ const ResidentialPage = () => {
           image={residential2}
         />
 
-        <ServiceDetailType2 
-          title={'Арендный бизнес'}
-          desc={`Покупка готового арендного бизнеса, который 
-            сразу приносит доход.`}
+        <Section5 
+          title={'Квартиры в новостройке'}
+          desc={`Сделаем покупку квартиры комфортной и выгодной. 
+            Ваша недвижимость принесет вам лучшую жизнь.`}
           choice={choice3}
           btnTitle={'Купить'}
           image={residential3}

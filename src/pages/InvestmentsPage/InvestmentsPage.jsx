@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 import ServiceInfoType2 from "../../components/ServiceInfo/ServiceInfoType2/ServiceInfoType2"
 import investment from "/images/investment_1.png"
 import investment1 from "/images/investment_2.png"
-import ServiceDetailType4 from "../../components/ServiceDetail/ServiceDetailType4/ServiceDetailType4"
 import FormEmail from "../../components/FormEmail/FormEmail"
+import Section2 from "./sections/Section2/Section2"
 const InvestmentsPage = () => {
   const checkedItem = ["Минимизируем риски", "Обеспечиваем высокую доходность", "Превращаем недвижимость в актив"]
   const minititle = [
@@ -82,12 +82,12 @@ const InvestmentsPage = () => {
           btnTitle={'Консультация'}
         />
 
-        <ServiceDetailType4 
+        <Section2 
           choice={choice}
           bg={"bg-[#E8E7E7] text-[#333] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]"}
           title={'Инвестируй с нами'}
           
-          btnTitle={'Продать'}
+          btnTitle={'Инвестировать'}
           image={investment1}
         />
         <FormEmail />
