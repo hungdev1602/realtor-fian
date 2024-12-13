@@ -1,8 +1,13 @@
-import ExperienceItem from "../../../../components/ExperienceItem/ExperienceItem"
-import SliderExperience from "../../../../components/SliderExperience/SliderExperience"
-import Title from "../../../../components/Title/Title"
 
-const Section2 = () => {
+// import './style.scss'
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import ExperienceItem from "../ExperienceItem/ExperienceItem";
+const SliderExperience = () => {
   const text1 = `1.Первая сделка - размен своей квартиры
 2.Помощь в обменах и разменах, трудоустройство в агентство
 3.За 6 месяцев работы - лучший агент компании
@@ -25,42 +30,47 @@ const Section2 = () => {
 5.Основание FIAN - финансово - инвестиционного агентства`
   return (
     <>
-      <div className="mt-[80px] sm:mt-[120px]">
-        <Title title={'Опыт работы'} />
-
-        <div className="hidden sm:grid grid-cols-2 gap-[10px] lg:gap-[40px]">
+      <Swiper
+        slidesPerView={1.1}
+        spaceBetween={10}
+        className="mySwiper"
+      >
+        <SwiperSlide>
           <ExperienceItem 
             year={'1989 - 2000'}
             text={text1}
-            start={120}
+            start={0}
             end={0}
           />
+        </SwiperSlide>
+        <SwiperSlide>
           <ExperienceItem 
             year={'2000-2010'}
             text={text2}
-            start={80}
-            end={180}
-          />
-          <ExperienceItem 
-            year={'2010-2020'}
-            text={text3}
-            start={120}
+            start={0}
             end={0}
           />
+        </SwiperSlide>
+        <SwiperSlide>
           <ExperienceItem 
-            year={'2020-2024'}
-            text={text4}
-            start={80}
-            end={180}
+            year={'2000-2010'}
+            text={text3}
+            start={0}
+            end={0}
           />
-        </div>
-
-        <div className="block sm:hidden">
-          <SliderExperience />
-        </div>
-      </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ExperienceItem 
+            year={'2000-2010'}
+            text={text4}
+            start={0}
+            end={0}
+          />
+        </SwiperSlide>
+      </Swiper>
     </>
   )
 }
 
-export default Section2
+export default SliderExperience
+

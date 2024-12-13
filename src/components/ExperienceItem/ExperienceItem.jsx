@@ -34,11 +34,11 @@ const ExperienceItem = (props) => {
   return (
     <>
       <div 
-        className={`pt-[30px] pl-[40px] pb-[46px] rounded-[20px] ${shadow ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] text-[#000]' : 'bg-[#A2999E] text-[#fff]'} transition-all duration-1000`}
+        className={`pt-[15px] sm:pt-[30px] pl-[15px] sm:pl-[40px] pb-[15px] sm:pb-[46px] rounded-[20px] ${shadow ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] text-[#000]' : 'bg-[#A2999E] text-[#fff]'} transition-all duration-1000`}
         ref={elementRef}
       >
-        <span className={`w-[200px] h-[46px] inline-flex items-center justify-center border rounded-[60px] text-[24px] ${shadow ? 'border-[#000]' : 'border-[#fff]'} transition-[border-color] duration-1000`}>{year}</span>
-        <div className="text-[24px] font-[400] whitespace-pre-line mt-[13px]">{text}</div>
+        <span className={`w-[84px] sm:w-[150px] lg:w-[200px] h-[26px] sm:h-[35px] lg:h-[46px] inline-flex items-center justify-center border rounded-[60px] text-[9px] md:text-[15px] lg:text-[20px] 2xl:text-[24px] ${shadow ? 'border-[#000]' : 'border-[#fff]'} transition-[border-color] duration-1000`}>{year}</span>
+        <div className="text-[9px] md:text-[15px] lg:text-[20px] 2xl:text-[24px] font-[400] whitespace-pre-line mt-[13px]">{text}</div>
       </div>
     </>
   )
