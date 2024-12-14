@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/ServiceInfoType1"
 import case1 from "/images/bg-1.png"
 import Section1 from "./sections/Section1/Section1"
 import Section2 from "./sections/Section2/Section2"
 import Section3 from "./sections/Section3/Section3"
+import SectionFirst from "./sections/SectionFirst/SectionFirst"
 
 const Case1Page = () => {
   const cards = ["покупка", "коммерческая"]
@@ -21,7 +21,7 @@ const Case1Page = () => {
     <>
       <div className="container mx-auto mt-[40px]">
         {/* Sub link */}
-        <span className="p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[24px]">
+        <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[10px] sm:text-[24px]">
           <Link to={'/'}>Основное</Link>
           /
           <Link to={'/info'}>Кейсы</Link>
@@ -29,7 +29,7 @@ const Case1Page = () => {
           <Link to={'/case1'}>Кейс 1</Link>
         </span>
 
-        <ServiceInfoType1 
+        <SectionFirst 
           card={cards}
           title={"Покупка офиса в Бц ЗАО"}
           subtitle={`Покупка помещения от 268 кв. м. с выгодой 35 млн. руб. 
