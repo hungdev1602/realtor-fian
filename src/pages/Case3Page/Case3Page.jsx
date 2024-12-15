@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/ServiceInfoType1"
 import case3 from "/images/case3_1.png"
 import Section1 from "./sections/Section1/Section1"
 import Section2 from "./sections/Section2/Section2"
+import SectionFirst from "./sections/SectionFirst/SectionFirst"
 const Case3Page = () => {
   const cards = ["Аренда", "Капитализация", "Продажа ГАБ"]
   const minititle = [
@@ -27,7 +27,7 @@ const Case3Page = () => {
           <Link to={'/case3'}>Кейс 3</Link>
         </span>
 
-        <ServiceInfoType1 
+        <SectionFirst 
           card={cards}
           title={"БЦ «Баумонский»"}
           subtitle={`Получили 3 помещения стоимостью по 15 млн. каждое, 
@@ -38,8 +38,8 @@ const Case3Page = () => {
         />
 
         <Section1 />
-        <Section2 />
       </div>
+      <Section2 />
     </>
   )
 }

@@ -1,16 +1,18 @@
 import { FaCheck } from "react-icons/fa6"
 import case1_2 from "/images/case1_2.png"
 import case2 from "/images/case2_3.png"
+import case2_1 from "/images/case2_2.png"
+import Title from "../../../../components/Title/Title"
 const Section2 = () => {
   return (
     <>
-      <div className="mt-[120px]">
-        <div className="flex justify-between">
+      <div className="container mx-auto mt-[80px] sm:mt-[120px]">
+        <div className="hidden sm:flex flex-wrap lg:flex-nowrap justify-between">
           {/* Left */}
-          <div className="w-[828px]">
-            <div className="pt-[20px] px-[20px] pb-[40px] bg-[#A2999E] text-[#fff] rounded-[20px]">
-              <div className="text-[64px] font-[400] font-avenir">Результат</div>
-              <div className="flex items-center gap-[7px] mt-[15px] text-[20px] font-[400]">
+          <div className="w-[566px] 2xl:w-[828px]">
+            <Title title={'Результат'}/>
+            <div className="pt-[30px] 2xl:pt-[40px] px-[20px] pb-[30px] 2xl:pb-[46px] bg-[#8F4449] text-[#fff] rounded-[20px] mt-[-30px] xl:mt-0">
+              <div className="flex items-center gap-[7px] text-[20px] font-[400]">
                 <FaCheck /> Пассивный доход
               </div>
               <div className="flex items-center gap-[7px] mt-[10px] text-[20px] font-[400]">
@@ -20,10 +22,10 @@ const Section2 = () => {
                 <FaCheck /> Довольный клиент
               </div>
             </div>
-            <div className="flex items-center gap-[111px] mt-[117px]">
+            <div className="flex items-center gap-[39px] 2xl:gap-[111px] mt-[24px] 2xl:mt-[45px]">
               {/* Left */}
               <div className="flex items-center gap-[20px]">
-                <div className="w-[75px] h-[75px] truncate rounded-full">
+                <div className="w-[70px] 2xl:w-[75px] h-[70px] 2xl:h-[75px] truncate rounded-full">
                   <img src={case1_2} alt="" />
                 </div>
                 <div className="">
@@ -32,14 +34,35 @@ const Section2 = () => {
                 </div>
               </div>
               {/* Right */}
-              <button className="w-[350px] h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[24px] rounded-[20px]">Консультация</button>
+              <button className="w-[267px] 2xl:w-[350px] h-[70px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[20px] 2xl:text-[24px] rounded-[20px]">Консультация</button>
             </div>
           </div>
 
           {/* Right */}
-          <div className="w-[716px] h-[453px]">
+          <div className="hidden lg:block w-[500px] xl:w-[594px] 2xl:w-[716px] h-[402px] 2xl:h-[453px]">
             <img src={case2} alt="" />
           </div>
+        </div>
+      </div>
+      {/* Mobile */}
+      <div className="block sm:hidden pt-[20px] pb-[15px] 2xl:pb-[40px] bg-[#8F4449] text-[#fff] rounded-[20px]">
+        <div className="container mx-auto">
+          <div className="text-[24px] 2xl:text-[64px] font-[400] font-avenir">Результат</div>
+          <div className="flex items-center gap-[7px] mt-[5px] 2xl:mt-[15px] text-[12px] font-[400]">
+            <FaCheck /> Пассивный доход
+          </div>
+          <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
+            <FaCheck /> Сейчас это помещение стоит 25 миллионов рублей
+          </div>
+          <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
+            <FaCheck /> Довольный клиент
+          </div>
+          <button className="w-full 2xl:w-[350px] h-[50px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[14px] 2xl:text-[24px] rounded-[20px] mt-[15px]">Консультация</button>
+        </div>
+      </div>
+      <div className="block sm:hidden container mx-auto mt-[80px]">
+        <div className="w-full h-[270px] rounded-[15px] truncate">
+          <img src={case2_1} alt="" className="w-full h-full object-cover"/>
         </div>
       </div>
     </>

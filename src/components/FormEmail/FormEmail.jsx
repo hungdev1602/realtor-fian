@@ -34,7 +34,7 @@ const FormEmail = () => {
                 <label htmlFor="policy" className="text-[#00000099] text-[10px] sm:text-[16px] cursor-pointer">Политика конфиденциальности</label>
               </div>
 
-              <button className="flex w-full sm:w-[350px] h-[50px] sm:h-[75px] items-center justify-center bg-[#333333] text-[16px] text-[#fff] rounded-[10px] sm:rounded-[20px] mt-[26px]">
+              <button className="flex w-full sm:w-[350px] h-[50px] sm:h-[75px] items-center justify-center bg-[#333333] text-[16px] xl:text-[24px] text-[#fff] rounded-[10px] sm:rounded-[20px] mt-[26px]">
                 Получить консультацию
               </button>
             </form>
