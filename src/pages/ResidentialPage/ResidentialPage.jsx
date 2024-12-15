@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/ServiceInfoType1"
 import residential from "/images/residential_1.png"
 import residential1 from "/images/residential_2.png"
 import residential2 from "/images/residential_3.png"
@@ -9,6 +8,7 @@ import FormEmail from "../../components/FormEmail/FormEmail"
 import Section2 from "./sections/Section2/Section2"
 import Section4 from "./sections/Section4/Section4"
 import Section5 from "./sections/Section5/Section5"
+import Section1 from "./sections/Section1/Section1"
 const ResidentialPage = () => {
   const cards = ["новостройки", "вторичный рынок"]
   const minititle = [
@@ -134,7 +134,7 @@ const ResidentialPage = () => {
     <>
       <div className="container mx-auto mt-[40px]">
         {/* Sub link */}
-        <span className="p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[24px]">
+        <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[10px] sm:text-[24px]">
           <Link to={'/'}>Основное</Link>
           /
           <Link to={'/info'}>Наши услуги</Link>
@@ -142,7 +142,7 @@ const ResidentialPage = () => {
           <Link to={'/residential'}>Жилая недвижимость</Link>
         </span>
 
-        <ServiceInfoType1 
+        <Section1 
           card={cards}
           title={"Жилая недвижимость"}
           subtitle={'Услуги по покупке и продажи жилой недвижимости'}

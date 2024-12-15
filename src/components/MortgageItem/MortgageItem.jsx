@@ -8,12 +8,12 @@ export const MortgageItem = (props) => {
   } = props
   return (
     <>
-      <div className="w-[520px] h-[250px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[20px] pt-[20px] px-[50px] pb-[60px] text-center">
-        <span className="inline-flex w-[50px] h-[50px] items-center justify-center bg-[#8F4449] rounded-full">
-          <img src={image} alt="" className="w-[32px] h-[32px]"/>
+      <div className="w-auto md:w-[390px] 2xl:w-[520px] h-[163px] sm:h-[222px] 2xl:h-[250px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[20px] pt-[15px] sm:pt-[20px] px-[5px] sm:px-[18px] 2xl:px-[50px] pb-[20px] sm:pb-[60px] text-center">
+        <span className="inline-flex w-[26px] sm:w-[50px] h-[26px] sm:h-[50px] items-center justify-center bg-[#8F4449] rounded-full">
+          <img src={image} alt="" className="w-[16px] sm:w-[32px] h-[16px] sm:h-[32px]"/>
         </span>
-        <div className="w-[430px] text-[32px] font-[400] whitespace-pre-line">{title}</div>
-        <div className="text-[18px] font-[400] mt-[20px] leading-[21,7px] whitespace-pre-line">{desc}</div>
+        <div className="w-auto md:w-[355px] 2xl:w-[430px] text-[14px] sm:text-[25px] 2xl:text-[32px] font-[400] whitespace-normal sm:whitespace-pre-line">{title}</div>
+        <div className="text-[10px] sm:text-[16px] 2xl:text-[18px] font-[400] mt-[10px] sm:mt-[20px] leading-[14px] sm:leading-[21.7px] whitespace-normal sm:whitespace-pre-line">{desc}</div>
       </div>
     </>
   )
