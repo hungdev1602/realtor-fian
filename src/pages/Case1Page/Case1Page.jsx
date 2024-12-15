@@ -41,8 +41,8 @@ const Case1Page = () => {
 
         <Section1 />
         <Section2 />
-        <Section3 />
       </div>
+      <Section3 />
     </>
   )
 }
