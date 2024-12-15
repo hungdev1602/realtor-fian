@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import ServiceInfoType1 from "../../components/ServiceInfo/ServiceInfoType1/ServiceInfoType1"
 import commercial from "/images/commercial_1.png"
 import commercial1 from "/images/commercial_2.png"
 import commercial2 from "/images/commercial_3.png"
@@ -7,6 +6,7 @@ import commercial3 from "/images/commercial_4.png"
 import FormEmail from "../../components/FormEmail/FormEmail"
 import Section3 from "./sections/Section3/Section3"
 import Section2 from "./sections/Section2/Section2"
+import Section1 from "./sections/Section1/Section1"
 const CommercialRealEstatePage = () => {
   const cards = ["покупка", "продажа", "упаковка", "готовые арендные бизнесы"]
   const minititle = [
@@ -108,7 +108,7 @@ const CommercialRealEstatePage = () => {
           <Link to={'/commercial'}>Коммерческая недвижимость</Link>
         </span>
 
-        <ServiceInfoType1 
+        <Section1 
           card={cards}
           title={"Коммерческая недвижимость"}
           minititle={minititle}
@@ -124,17 +124,18 @@ const CommercialRealEstatePage = () => {
           btnTitle={'Продать'}
           image={commercial1}
         />
+      </div>
+      <Section3 
+        title={'Арендный бизнес'}
+        desc={`Покупка готового арендного бизнеса, который 
+          сразу приносит доход.`}
+        choice={choice2}
+        btnTitle={'Купить'}
+        image1={commercial2}
+        image2={commercial3}
+      />
 
-        <Section3 
-          title={'Арендный бизнес'}
-          desc={`Покупка готового арендного бизнеса, который 
-            сразу приносит доход.`}
-          choice={choice2}
-          btnTitle={'Купить'}
-          image1={commercial2}
-          image2={commercial3}
-        />
-
+      <div className="container mx-auto">
         <FormEmail />
       </div>
     </>
