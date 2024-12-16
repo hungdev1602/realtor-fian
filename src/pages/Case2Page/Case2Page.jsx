@@ -24,7 +24,7 @@ const Case2Page = () => {
           /
           <Link to={'/info'}>Кейсы</Link>
           /
-          <Link to={'/case2'}>Кейс 2</Link>
+          <Link to={'/case2'}>БЦ СЗАО</Link>
         </span>
 
         <SectionFirst 

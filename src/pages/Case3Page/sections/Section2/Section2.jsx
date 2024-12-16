@@ -59,11 +59,7 @@ const Section2 = () => {
           <button className="w-full 2xl:w-[350px] h-[50px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[14px] 2xl:text-[24px] rounded-[20px] mt-[15px]">Консультация</button>
         </div>
       </div>
-      <div className="block sm:hidden container mx-auto mt-[80px]">
-        <div className="w-full h-[270px] rounded-[15px] truncate">
-          <img src={case3} alt="" className="w-full h-full object-cover"/>
-        </div>
-      </div>
+
     </>
   )
 }

@@ -40,11 +40,11 @@ const ServiceInfoType2 = (props) => {
         <div className="w-full sm:w-[785px] mt-[15px] lg:mt-[-155px] xl:mt-[-197px]">
           <div className="grid grid-cols-2 gap-[42px] mb-[10px] sm:mb-[35px] xl:mb-[58px] 2xl:mb-[40px]">
             <div className="">
-              <div className="text-[14px] sm:text-[20px] xl:text-[24px] 2xl:text-[32px] font-[600]">{minititle[0]["title"]}</div>
+              <div className="text-[14px] sm:text-[20px] xl:text-[24px] 2xl:text-[32px] font-[600] sm:font-[500]">{minititle[0]["title"]}</div>
               <div className="text-[10px] sm:text-[14px] xl:text-[18px] font-[400] text-[#00000099]">{minititle[0]["desc"]}</div>
             </div>
             <div className="">
-              <div className="text-[14px] sm:text-[20px] xl:text-[24px] 2xl:text-[32px] font-[600]">{minititle[1]["title"]}</div>
+              <div className="text-[14px] sm:text-[20px] xl:text-[24px] 2xl:text-[32px] font-[600] sm:font-[500]">{minititle[1]["title"]}</div>
               <div className="text-[10px] sm:text-[14px] xl:text-[18px] font-[400] text-[#00000099]">{minititle[1]["desc"]}</div>
             </div>
           </div>

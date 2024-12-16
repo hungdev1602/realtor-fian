@@ -18,8 +18,8 @@ const Slider = () => {
   return (
     <>
       <Swiper
-        slidesPerView={(window.innerWidth > 576) ? 5 : 3}
-        spaceBetween={30}
+        slidesPerView={(window.innerWidth > 576) ? 6 : 3}
+        spaceBetween={10}
         loop={true} //important for autoplay
         speed={2000} //important for autoplay
         autoplay={{ //important for autoplay

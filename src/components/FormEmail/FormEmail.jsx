@@ -3,7 +3,7 @@ const FormEmail = () => {
   return (
     <>
       <div className="mt-[80px] sm:mt-[120px]">
-        <div className="h-[360px] sm:h-[520px] bg-[#DCDADA] rounded-[20px] pt-[20px] md:pt-[40px] pl-[20px] md:pl-[40px] pr-[20px] md:pr-0 flex flex-wrap xl:flex-nowrap">
+        <div className="h-[360px] sm:h-[550px] bg-[#DCDADA] rounded-[20px] pt-[20px] md:pt-[40px] pl-[20px] md:pl-[40px] pr-[20px] md:pr-0 flex flex-wrap xl:flex-nowrap">
           {/* Left */}
           <div className="w-full md:flex-1 relative z-[2]">
             <div className="text-[23px] sm:text-[30px] 2xl:text-[40px] font-[500]">Превратим вашу недвижимость в актив</div>
@@ -41,7 +41,7 @@ const FormEmail = () => {
           </div>
 
           {/* Right */}
-          <div className="w-[360px] sm:w-[772px] 2xl:w-[772px] h-[198px] sm:h-[476px] 2xl:h-[465px] mt-[-210px] sm:mt-[-500px] xl:mt-0 relative z-[1]">
+          <div className="w-[360px] sm:w-[772px] 2xl:w-[772px] h-[198px] sm:h-[476px] 2xl:h-[490px] mt-[-210px] sm:mt-[-500px] xl:mt-0 relative z-[1]">
             <img src={test} alt="" className="w-full h-full object-cover"/>
           </div>
         </div>

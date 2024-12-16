@@ -192,7 +192,7 @@ const Section3 = () => {
           </div>
         </div>
       </div>
-      <div className="block sm:hidden pt-[20px] pb-[15px] 2xl:pb-[40px] bg-[#8F4449] text-[#fff] rounded-[20px]">
+      <div className="block sm:hidden pt-[20px] pb-[15px] 2xl:pb-[40px] bg-[#8F4449] text-[#fff] rounded-[20px] mt-[80px]">
         <div className="container mx-auto">
           <div className="text-[24px] 2xl:text-[64px] font-[400] font-avenir">Результат</div>
           <div className="flex items-center gap-[7px] mt-[5px] 2xl:mt-[15px] text-[12px] font-[400]">

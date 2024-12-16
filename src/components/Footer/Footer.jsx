@@ -103,16 +103,16 @@ const Footer = () => {
                     <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaYoutube size={size}/></Link>
                   </div>
                   {/* Address */}
-                  <div className="w-[166px] sm:w-[158px] 2xl:w-[232px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                  <div className="w-[166px] sm:w-[158px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
                     <FaMapMarkerAlt size={size}/> Большой тишинский 8с1
                   </div>
                   {/* Email */}
-                  <div className="w-[166px] sm:w-[158px] 2xl:w-[232px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                  <div className="w-[166px] sm:w-[158px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
                     <MdOutlineEmail size={size}/> fianrealestate@yandex.ru
                   </div>
                   {/* Phone */}
-                  <div className="w-[166px] sm:w-[158px] 2xl:w-[232px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
-                    <FiPhone  size={size}/> +7 999 999 99 99
+                  <div className="w-[166px] sm:w-[158px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                    <FiPhone size={size} className="mr-[18px] sm:mr-[32px]"/> +7 999 999 99 99
                   </div>
                 </div>
                 {/* Right schedule */}

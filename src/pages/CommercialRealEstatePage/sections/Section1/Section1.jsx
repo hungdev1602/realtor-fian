@@ -51,11 +51,11 @@ const Section1 = (props) => {
         <div className="w-full sm:w-[560px] xl:w-[640px] 2xl:w-[785px] mt-[15px] lg:mt-[-220px] xl:mt-[-168px] 2xl:mt-[-197px]">
           <div className="grid grid-cols-2 gap-[24px] 2xl:gap-[42px] mb-[15px] sm:mb-[40px]">
             <div className="">
-              <div className="text-[12px] sm:text-[22px] 2xl:text-[32px] font-[600]">{minititle[0]["title"]}</div>
+              <div className="text-[12px] sm:text-[22px] 2xl:text-[31px] font-[600] sm:font-[500]">{minititle[0]["title"]}</div>
               <div className="text-[8px] sm:text-[18px] 2xl:text-[18px] font-[400] text-[#000000CC]">{minititle[0]["desc"]}</div>
             </div>
             <div className="">
-              <div className="text-[12px] sm:text-[22px] 2xl:text-[32px] font-[600]">{minititle[1]["title"]}</div>
+              <div className="text-[12px] sm:text-[22px] 2xl:text-[31px] font-[600] sm:font-[500]">{minititle[1]["title"]}</div>
               <div className="text-[8px] sm:text-[18px] 2xl:text-[18px] font-[400] text-[#000000CC]">{minititle[1]["desc"]}</div>
             </div>
           </div>

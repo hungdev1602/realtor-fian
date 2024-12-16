@@ -28,7 +28,7 @@ const Header = () => {
               />
             </Link>
   
-            <div className="hidden lg:flex items-center gap-[40px] p-[39px] 2xl:p-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] ml-[160px] 2xl:ml-[320px]">
+            <div className="hidden lg:flex items-center gap-[40px] p-[39px] 2xl:p-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] 2xl:ml-[320px]">
               <Link to={'/info'} className="">Об основателе</Link>
               <Link 
                 to={'#numbers'} 
@@ -40,9 +40,9 @@ const Header = () => {
               <div className="group relative">
                 <div className="cursor-pointer" onClick={(e) => handleScrollToSection(e, '#cases')}>Кейсы •</div>
                 <div className="absolute left-[-15px] hidden group-hover:block w-[300px] text-[18px] 2xl:text-[20px] bg-white shadow-md rounded-md">
-                  <Link to={'/case1'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Кейс 1</Link>
-                  <Link to={'/case2'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Кейс 2</Link>
-                  <Link to={'/case3'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Кейс 3</Link>
+                  <Link to={'/case1'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">БЦ ЗАО</Link>
+                  <Link to={'/case2'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">БЦ СЗАО</Link>
+                  <Link to={'/case3'} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">БЦ Баумонский</Link>
                 </div>
               </div>
               <div className="group relative">

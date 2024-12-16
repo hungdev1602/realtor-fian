@@ -16,7 +16,7 @@ const Section4 = (props) => {
           {/* Left */}
           <div className="">
             
-            <div className="text-[12px] sm:text-[24px] 2xl:text-[32px] font-[400] text-[#333] whitespace-pre-line mt-0 sm:mt-[-25px] 2xl:mt-0">{desc}</div>
+            <div className="text-[12px] sm:text-[24px] 2xl:text-[32px] font-[300] text-[#333] whitespace-pre-line mt-0 sm:mt-[-25px] 2xl:mt-0">{desc}</div>
           </div>
 
           {/* Right */}

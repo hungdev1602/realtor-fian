@@ -53,11 +53,11 @@ const SectionFirst = (props) => {
         <div className="w-full sm:w-[560px] xl:w-[600px] 2xl:w-[785px] mt-[15px] xl:mt-[-164px] 2xl:mt-[-197px]">
           <div className="grid grid-cols-2 gap-[42px] mb-[15px] sm:mb-[40px]">
             <div className="">
-              <div className="text-[14px] sm:text-[24px] 2xl:text-[32px] font-[600]">{minititle[0]["title"]}</div>
+              <div className="text-[14px] sm:text-[24px] 2xl:text-[32px] font-[600] sm:font-[500]">{minititle[0]["title"]}</div>
               <div className="text-[10px] sm:text-[14px] 2xl:text-[18px] font-[400] text-[#000000CC]">{minititle[0]["desc"]}</div>
             </div>
             <div className="">
-              <div className="text-[14px] sm:text-[24px] 2xl:text-[32px] font-[600]">{minititle[1]["title"]}</div>
+              <div className="text-[14px] sm:text-[24px] 2xl:text-[32px] font-[600] sm:font-[500]">{minititle[1]["title"]}</div>
               <div className="text-[10px] sm:text-[14px] 2xl:text-[18px] font-[400] text-[#000000CC]">{minititle[1]["desc"]}</div>
             </div>
           </div>
@@ -66,7 +66,7 @@ const SectionFirst = (props) => {
             className="inline-flex w-full items-center justify-center gap-[5px] sm:w-auto py-[18px] 2xl:py-[23px] px-[50px] 2xl:px-[100px] bg-[#333333] text-[14px] sm:text-[20px] 2xl:text-[24px] text-[#fff] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#fff] hover:text-[#333] transition-all duration-150"
           >
             {btnTitle}
-            <FaChevronRight size={15}/>
+            <FaChevronRight size={15} className="hidden sm:block"/>
           </button>
         </div>
       </div>
