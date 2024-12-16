@@ -171,16 +171,16 @@ const ResidentialPage = () => {
           btnTitle={'Купить'}
           image={residential2}
         />
-
-        <Section5 
-          title={'Квартиры в новостройке'}
-          desc={`Сделаем покупку квартиры комфортной и выгодной. 
-            Ваша недвижимость принесет вам лучшую жизнь.`}
-          choice={choice3}
-          btnTitle={'Купить'}
-          image={residential3}
-        />
-
+      </div>
+      <Section5 
+        title={'Квартиры в новостройке'}
+        desc={`Сделаем покупку квартиры комфортной и выгодной. 
+          Ваша недвижимость принесет вам лучшую жизнь.`}
+        choice={choice3}
+        btnTitle={'Купить'}
+        image={residential3}
+      />
+      <div className="container mx-auto">
         <FormEmail />
       </div>
     </>
