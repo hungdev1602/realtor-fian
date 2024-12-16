@@ -5,7 +5,7 @@ import Title from "../../../../components/Title/Title"
 const Section6 = () => {
   return (
     <>
-      <div className="mt-[80px] sm:mt-[120px]">
+      <div className="mt-[80px] sm:mt-[120px]" id="faq">
         <Title title={'Часто задаваемые вопросы'}/>
 
         <div className="flex flex-col gap-[20px]">

@@ -49,14 +49,14 @@ const Section3 = (props) => {
                 className={"w-[149px] 2xl:w-[200px] h-[120px] 2xl:h-[150px] rounded-[20px] flex items-center justify-center relative shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#fff]"}
               >
                 <span className="text-[18px] 2xl:text-[20px] font-[900] absolute top-[10px] 2xl:top-[15px] left-[10px] 2xl:left-[15px]">3</span>
-                <div className="text-[16px] font-[500] text-center whitespace-pre-line ">{choice[1].title}</div>
+                <div className="text-[16px] font-[500] text-center whitespace-pre-line ">{choice[2].title}</div>
               </div>
               {/* 4 Item */}
               <div 
                 className={"w-[234px] 2xl:w-[280px] h-[120px] 2xl:h-[150px] rounded-[20px] flex items-center justify-center relative shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] bg-[#fff]"}
               >
                 <span className="text-[18px] 2xl:text-[20px] font-[900] absolute top-[10px] 2xl:top-[15px] left-[10px] 2xl:left-[15px]">4</span>
-                <div className="text-[16px] font-[500] text-center whitespace-pre-line ">{choice[1].title}</div>
+                <div className="text-[16px] font-[500] text-center whitespace-pre-line ">{choice[3].title}</div>
               </div>
             </div>
             {/* 2 Row */}

@@ -15,7 +15,7 @@ const RiskItem = (props) => {
   return (
     <>
       <div
-        className="w-auto sm:w-[285px] 2xl:w-[390px] h-[176px] sm:h-[269px] 2xl:h-[281px] bg-[#A2999E] p-[8px] sm:p-[20px] 2xl:p-[40px] rounded-[20px] text-[#fff] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] relative advantage"
+        className="w-auto sm:w-[285px] 2xl:w-[390px] h-[176px] sm:h-[269px] 2xl:h-[281px] bg-[#8F4449] p-[8px] sm:p-[20px] 2xl:p-[40px] rounded-[20px] text-[#fff] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] relative advantage"
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
       >

@@ -9,7 +9,7 @@ const InfoPage = () => {
     <>
       <div className="container mx-auto mt-[40px] text-[10px] sm:text-[20px] 2xl:text-[24px]">
         {/* Sub link */}
-        <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px]">
+        <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] bg-[#fff]">
           <Link to={'/'}>Основное</Link>
           /
           <Link to={'/info'}>Об основателе</Link>

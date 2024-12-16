@@ -22,7 +22,7 @@ const Section2 = () => {
                 <FaCheck /> Довольный клиент
               </div>
             </div>
-            <div className="flex items-center gap-[39px] 2xl:gap-[111px] mt-[24px] 2xl:mt-[45px]">
+            <div className="flex items-center justify-between gap-[39px] 2xl:gap-[111px] mt-[24px] 2xl:mt-[45px]">
               {/* Left */}
               <div className="flex items-center gap-[20px]">
                 <div className="w-[70px] 2xl:w-[75px] h-[70px] 2xl:h-[75px] truncate rounded-full">

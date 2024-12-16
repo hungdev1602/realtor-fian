@@ -24,7 +24,7 @@ const Section2 = (props) => {
 
           {/* Right */}
           <div className="w-full xl:w-auto">
-            <div className="hidden sm:block text-[12px] sm:text-[24px] 2xl:text-[32px] font-[400] mb-[40px] whitespace-pre-line">{subtitle}</div>
+            <div className="hidden sm:block text-[12px] sm:text-[24px] 2xl:text-[32px] text-[#333] font-[400] mb-[40px] whitespace-pre-line">{subtitle}</div>
             
             {/* On PC */}
             {/* 1 Row */}

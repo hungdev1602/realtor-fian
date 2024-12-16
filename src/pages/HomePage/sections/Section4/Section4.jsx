@@ -9,7 +9,7 @@ import Title from "../../../../components/Title/Title"
 const Section4 = () => {
   return (
     <>
-      <div className="container mx-auto mt-[80px] sm:mt-[120px]">
+      <div className="container mx-auto mt-[80px] sm:mt-[120px]" id="services">
         <Title title="Услуги" />
 
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-[20px] 2xl:gap-[40px]">
@@ -56,8 +56,8 @@ const Section4 = () => {
           <div className="flex items-center justify-between gap-[20px]">
             <img src={discount} alt="" className="w-[40px] md:w-[63px] h-auto"/>
             <div className="text-[#fff]">
-              <div className="text-[16px] sm:text-[20px] md:text-[32px] font-[400]">Скидка 5%</div>
-              <div className="text-[10px] md:text-[18px] font-[400]">При принятии решения до 2х дней</div>
+              <div className="text-[16px] sm:text-[20px] md:text-[32px] font-[400] text-[#F4ECED]">Скидка 5%</div>
+              <div className="text-[10px] md:text-[18px] font-[400] text-[#FFFFFFCC]">При принятии решения до 2х дней</div>
             </div>
           </div>
           <div className="py-[10px] md:py-[23px] px-[21px] md:px-[59px] bg-[#fff] text-[10px] sm:text-[12px] md:text-[24px] font-[400] rounded-[10px] md:rounded-[20px] cursor-pointer">Получить</div>

@@ -4,7 +4,7 @@ import Title from "../../../../components/Title/Title"
 const Section3 = () => {
   return (
     <>
-      <div className="mt-[80px] sm:mt-[120px]">
+      <div className="mt-[80px] sm:mt-[120px]" id="cases">
         <Title title="Кейсы" />
         <div className="flex gap-[30px] 2xl:gap-[40px] flex-wrap lg:flex-nowrap">
           {/* Left */}

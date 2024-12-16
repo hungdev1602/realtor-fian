@@ -164,7 +164,7 @@ const Section1 = () => {
             </div>
 
 
-            <div className="hidden md:block w-[951px] text-[24px] 2xl:text-[32px] font-[400] mt-[30px] 2xl:mt-[55px] leading-[29px]">По запрошенным критериям помещения на рынке в столице <br /> не нашлось и клиент принял решение <b>купить помещение.</b> </div>
+            <div className="hidden md:block w-[951px] text-[24px] 2xl:text-[32px] text-[#333] font-[400] mt-[30px] 2xl:mt-[55px] leading-[29px]">По запрошенным критериям помещения на рынке в столице <br /> не нашлось и клиент принял решение <b>купить помещение.</b> </div>
 
             <div className="hidden sm:flex items-center gap-[111px] mt-[40px] 2xl:mt-[67px]">
               {/* Left */}

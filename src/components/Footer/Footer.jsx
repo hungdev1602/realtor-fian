@@ -7,7 +7,7 @@ import { FiPhone } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [widthForVideo, setWidthForVideo] = useState(window.innerWidth);
@@ -57,6 +57,18 @@ const Footer = () => {
     calculateWidthAndHeight();
   }, [width]);
 
+  const navigate = useNavigate()
+  const handleScrollToSection = (e, href) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      // Chuyển hướng về trang chính
+      navigate("/");
+      // Sử dụng setTimeout để đảm bảo rằng việc cuộn diễn ra sau khi chuyển hướng
+      setTimeout(() => {
+        window.scrollTo({ top: document.querySelector(href).offsetTop - 150, behavior: 'smooth' });
+      }, 100); // Thời gian chờ có thể điều chỉnh tùy theo nhu cầu
+    }
+  };
   return (
     <>
       <footer className="mt-[80px] sm:mt-[120px] bg-[#A2999E] py-[40px]">
@@ -91,23 +103,23 @@ const Footer = () => {
                     <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaYoutube size={size}/></Link>
                   </div>
                   {/* Address */}
-                  <div className="w-[166px] sm:w-auto flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
-                    <FaMapMarkerAlt size={size}/> Москва, Арбат 29к2
+                  <div className="w-[166px] sm:w-[158px] 2xl:w-[232px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                    <FaMapMarkerAlt size={size}/> Большой тишинский 8с1
                   </div>
                   {/* Email */}
-                  <div className="w-[166px] sm:w-auto flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                  <div className="w-[166px] sm:w-[158px] 2xl:w-[232px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
                     <MdOutlineEmail size={size}/> fianrealestate@yandex.ru
                   </div>
                   {/* Phone */}
-                  <div className="w-[166px] sm:w-auto flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                  <div className="w-[166px] sm:w-[158px] 2xl:w-[232px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
                     <FiPhone  size={size}/> +7 999 999 99 99
                   </div>
                 </div>
                 {/* Right schedule */}
-                <div className="bg-[#fff] text-[#000] rounded-[10px] w-[166px] sm:w-[193px] pb-[5px] sm:pb-0 pt-[5px] sm:pt-[8px] pl-[5px] sm:pl-[15px]">
-                  <div className="text-[12px] sm:text-[15px] 2xl:text-[18px]">Часы работы</div>
-                  <div className="mt-[5px] sm:mt-[10px]">пн - пт: 10:00 - 19:00</div>
-                  <div className="">cб - вс: 11:00 - 18:00</div>
+                <div className="bg-[#fff] text-[#000] rounded-[10px] w-[166px] sm:w-[193px] pb-[5px] sm:pb-0 pt-[5px] sm:pt-[8px] pl-[8px] sm:pl-[15px]">
+                  <div className="text-[12px] sm:text-[15px] 2xl:text-[18px] font-[500]">Часы работы</div>
+                  <div className="mt-[5px] sm:mt-[10px] font-[400]">пн - пт: 10:00 - 19:00</div>
+                  <div className="font-[400]">cб - вс: 11:00 - 18:00</div>
                 </div>
               </div>
 
@@ -115,11 +127,11 @@ const Footer = () => {
                 <div className="mt-[70px]">Навигация</div>
                 <div className="grid grid-cols-3 gap-[5px] mt-[20px] w-[550px] 2xl:w-[651px] text-[12px] 2xl:text-[16px]">
                   <Link to={'/info'} className="text-[#fff]">Об основателе</Link>
-                  <Link to={'/about'} className="text-[#fff]">Кейсы</Link>
-                  <Link to={'/services'} className="text-[#fff]">Преимущества</Link>
-                  <Link to={'/news'} className="text-[#fff]">Цифры</Link>
-                  <Link to={'/blog'} className="text-[#fff]">Услуги</Link>
-                  <Link to={'/contact'} className="text-[#fff]">Часто задаваемые вопросы</Link>
+                  <Link to={'#cases'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#cases')}>Кейсы</Link>
+                  <Link to={'#advantages'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#advantages')}>Преимущества</Link>
+                  <Link to={'#numbers'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#numbers')}>Цифры</Link>
+                  <Link to={'#services'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#services')}>Услуги</Link>
+                  <Link to={'#faq'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#faq')}>Часто задаваемые вопросы</Link>
                 </div>
   
                 <Link to={'/'} className="inline-block mt-[60px] text-[12px] text-[#fff]">Политика конфиденциальности</Link>
@@ -131,11 +143,11 @@ const Footer = () => {
             <div className="">Навигация</div>
             <div className="grid grid-cols-[1fr_0.5fr_2fr] gap-[10px] sm:gap-[5px] mt-[20px] w-[330px] sm:w-[550px] 2xl:w-[651px] text-[12px] 2xl:text-[16px]">
               <Link to={'/info'} className="text-[#fff]">Об основателе</Link>
-              <Link to={'/about'} className="text-[#fff]">Кейсы</Link>
-              <Link to={'/services'} className="text-[#fff]">Преимущества</Link>
-              <Link to={'/news'} className="text-[#fff]">Цифры</Link>
-              <Link to={'/blog'} className="text-[#fff]">Услуги</Link>
-              <Link to={'/contact'} className="text-[#fff]">Часто задаваемые вопросы</Link>
+              <Link to={'#cases'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#cases')}>Кейсы</Link>
+              <Link to={'#advantages'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#advantages')}>Преимущества</Link>
+              <Link to={'#numbers'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#numbers')}>Цифры</Link>
+              <Link to={'#services'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#services')}>Услуги</Link>
+              <Link to={'#faq'} className="text-[#fff]" onClick={(e) => handleScrollToSection(e, '#faq')}>Часто задаваемые вопросы</Link>
             </div>
 
             <Link to={'/'} className="inline-block mt-[30px] lg:mt-[60px] text-[12px] text-[#fff]">Политика конфиденциальности</Link>

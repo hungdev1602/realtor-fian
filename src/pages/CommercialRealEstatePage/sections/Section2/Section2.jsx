@@ -53,7 +53,7 @@ const Section2 = (props) => {
 
           {/* Right */}
           <div className="w-full sm:w-auto">
-            <div className="text-[12px] sm:text-[32px] font-[400] mb-[15px] sm:mb-[40px]">Выгодная продажа за короткий срок.</div>
+            <div className="text-[12px] sm:text-[32px] text-[#333] font-[400] mb-[15px] sm:mb-[40px]">Выгодная продажа за короткий срок.</div>
             {/* On PC */}
             {/* 1 row */}
             <div className="hidden sm:flex gap-[10px]">

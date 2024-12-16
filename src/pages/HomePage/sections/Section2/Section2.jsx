@@ -8,7 +8,7 @@ const Section2 = () => {
         <Title title="Партнеры" />
       </div>
 
-      <div className="h-[90px] sm:h-[120px] lg:h-[150px] bg-[#A2999E] rounded-[0px] sm:rounded-[20px] flex items-center">
+      <div className="h-[70px] sm:h-[120px] lg:h-[150px] bg-[#A2999E] rounded-[10px] sm:rounded-[20px] flex items-center">
         <Slider />
       </div>
     </div>

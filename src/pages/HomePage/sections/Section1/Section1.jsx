@@ -6,7 +6,7 @@ import BoxInfoTransparent from "../../../../components/BoxInfoTransparent/BoxInf
 const Section1 = () => {
   return (
     <>
-      <div className="">
+      <div className="" id="numbers">
         <div className="flex justify-between flex-wrap lg:flex-nowrap gap-[20px] lg:gap-[100px]">
           {/* Left */}
           <div className="w-[100%] lg:w-[55%] font-avenir text-[18px] sm:text-[30px] xl:text-[37px] 2xl:text-[52px]">

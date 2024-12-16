@@ -24,7 +24,7 @@ const Section1 = () => {
       <div className="mt-[80px] sm:mt-[120px]">
         <div className="flex flex-wrap lg:flex-nowrap justify-between">
           {/* Left */}
-          <div className="hidden md:block w-[566px] 2xl:w-[764px] h-[369px] 2xl:h-[432px] rounded-[20px] truncate">
+          <div className="hidden md:block w-[566px] 2xl:w-[820px] h-[369px] 2xl:h-[432px] rounded-[20px] truncate">
             <img src={case2} alt="" className="w-full h-full object-cover"/>
           </div>
 

@@ -32,8 +32,8 @@ const Section2 = () => {
           {/* Left */}
 
           <div className="w-full xl:w-auto text-[#fff]">
-            <div className="w-full xl:w-[615px] 2xl:w-[694px] py-[24px] bg-[#8F4449] text-[14px] sm:text-[20px] 2xl:text-[28px] font-[500] text-center rounded-[10px] sm:rounded-[20px]">Определили бюджет 100.000.000 руб. </div>
-            <div className="w-full xl:w-[615px] 2xl:w-[694px] py-[24px] bg-[#8F4449] text-[14px] sm:text-[20px] 2xl:text-[28px] font-[500] text-center rounded-[10px] sm:rounded-[20px] mt-[10px] sm:mt-[20px]">Нашли единственное отвечающее запросу: <br />Подобные помещения стоили от 130.000.000 руб. </div>
+            <div className="w-full xl:w-[615px] 2xl:w-[694px] py-[18px] bg-[#8F4449] text-[14px] sm:text-[20px] 2xl:text-[28px] font-[500] text-center rounded-[10px] sm:rounded-[20px]">Определили бюджет 100.000.000 руб. </div>
+            <div className="w-full xl:w-[615px] 2xl:w-[694px] py-[18px] bg-[#8F4449] text-[14px] sm:text-[20px] 2xl:text-[28px] font-[500] text-center rounded-[10px] sm:rounded-[20px] mt-[10px] sm:mt-[20px]">Нашли единственное отвечающее запросу: <br />Подобные помещения стоили от 130.000.000 руб. </div>
           </div>
 
           {/* Right */}
