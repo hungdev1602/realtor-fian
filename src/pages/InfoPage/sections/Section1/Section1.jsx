@@ -3,6 +3,7 @@ import founder2 from "/images/Founder_2.png"
 import BoxInfoTransparent from "../../../../components/BoxInfoTransparent/BoxInfoTransparent";
 import { Link } from "react-router-dom";
 import { RiTelegram2Line } from "react-icons/ri";
+import './styles.scss'
 const Section1 = () => {
   const text = `Партнер национального центра 
   реконструкций и перепланировок`
@@ -22,12 +23,12 @@ const Section1 = () => {
             </div>
           </div>
           {/* Right */}
-          <div className="w-[380px] sm:w-[400px] xl:w-[490px] 2xl:w-[765px] h-[391px] sm:h-[410px] xl:h-[487px] 2xl:h-[623px] rounded-[20px] truncate relative cursor-pointer">
+          <div className="w-[380px] sm:w-[400px] xl:w-[490px] 2xl:w-[765px] h-[391px] sm:h-[410px] xl:h-[487px] 2xl:h-[623px] rounded-[20px] truncate relative cursor-pointer hover_info">
             <img src={founder2} alt="" className="w-full h-full object-cover"/>
 
             <Link 
               to='/' 
-              className="hidden sm:block py-[15px] xl:py-[25px] 2xl:py-[30px] px-[80px] xl:px-[120px] 2xl:px-[211px] absolute bottom-[34px] left-[40px] right-[40px] text-[15px] 2xl:text-[20px] bg-[#f6f5f5db] rounded-[15px] xl:rounded-[20px] cursor-pointer"
+              className="hidden sm:block py-[15px] xl:py-[25px] 2xl:py-[30px] px-[80px] xl:px-[120px] 2xl:px-[211px] absolute bottom-[34px] left-[40px] right-[40px] text-[15px] 2xl:text-[20px] bg-[#f6f5f5db] rounded-[15px] xl:rounded-[20px] cursor-pointer info"
             >
               Получить консультацию
             </Link>

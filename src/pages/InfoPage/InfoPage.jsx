@@ -16,10 +16,13 @@ const InfoPage = () => {
         </span>
 
         <Section1 />
-        <Section2 />
+      </div>
+      <Section2 />
+      <div className="container mx-auto">
         <Section3 />
         <FormEmail />
       </div>
+      
     </>
   )
 }

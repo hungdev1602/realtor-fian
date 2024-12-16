@@ -1,0 +1,8 @@
+.hover_info:hover .info{
+  opacity: 1;
+}
+
+.info{
+  transition: all 0.4s ease;
+  opacity: 0;
+}

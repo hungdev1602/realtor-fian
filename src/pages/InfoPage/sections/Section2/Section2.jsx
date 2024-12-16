@@ -25,7 +25,7 @@ const Section2 = () => {
 5.Основание FIAN - финансово - инвестиционного агентства`
   return (
     <>
-      <div className="mt-[80px] sm:mt-[120px]">
+      <div className="container mx-auto mt-[80px] sm:mt-[120px]">
         <Title title={'Опыт работы'} />
 
         <div className="hidden sm:grid grid-cols-2 gap-[10px] lg:gap-[40px]">
@@ -55,9 +55,9 @@ const Section2 = () => {
           />
         </div>
 
-        <div className="block sm:hidden">
-          <SliderExperience />
-        </div>
+      </div>
+      <div className="block pl-[10px] sm:hidden">
+        <SliderExperience />
       </div>
     </>
   )
