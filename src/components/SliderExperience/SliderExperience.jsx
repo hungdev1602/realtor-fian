@@ -53,7 +53,7 @@ const SliderExperience = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ExperienceItem 
-            year={'2000-2010'}
+            year={'2010-2020'}
             text={text3}
             start={0}
             end={0}
@@ -61,7 +61,7 @@ const SliderExperience = () => {
         </SwiperSlide>
         <SwiperSlide>
           <ExperienceItem 
-            year={'2000-2010'}
+            year={'2020-2024'}
             text={text4}
             start={0}
             end={0}

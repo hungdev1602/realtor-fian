@@ -35,7 +35,7 @@ export const MortgageItem = (props) => {
   return (
     <>
       <div 
-        className={`w-auto md:w-[390px] 2xl:w-[520px] h-[163px] sm:h-[222px] 2xl:h-[250px] rounded-[20px] pt-[15px] sm:pt-[20px] px-[5px] sm:px-[18px] 2xl:px-[50px] pb-[20px] sm:pb-[60px] text-center ${shadow ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]' : ''} transition-shadow duration-1000`}
+        className={`w-auto md:w-[390px] 2xl:w-[520px] h-[163px] sm:h-[222px] 2xl:h-[250px] rounded-[20px] pt-[15px] sm:pt-[20px] px-[5px] sm:px-[18px] 2xl:px-[50px] pb-[20px] sm:pb-[60px] text-center bg-[#fff] ${shadow ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]' : ''} transition-shadow duration-1000`}
         ref={elementRef}
       >
         <span className="inline-flex w-[26px] sm:w-[50px] h-[26px] sm:h-[50px] items-center justify-center bg-[#8F4449] rounded-full">

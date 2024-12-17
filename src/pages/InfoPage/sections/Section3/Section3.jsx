@@ -40,7 +40,7 @@ const Section3 = () => {
           </div>
         </div>
 
-        <div className="block sm:hidden">
+        <div className="block sm:hidden bg-[#E4E3E3CC] rounded-[20px] py-[10px]">
           <SliderAwards />
         </div>
       </div>

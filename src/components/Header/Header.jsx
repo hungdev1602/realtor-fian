@@ -29,7 +29,7 @@ const Header = ({ setOpenBurgerMenu }) => {
               />
             </Link>
   
-            <div className="hidden lg:flex items-center gap-[40px] p-[39px] 2xl:p-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] 2xl:ml-[320px]">
+            <div className="hidden lg:flex items-center gap-[40px] p-[39px] 2xl:p-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] 2xl:ml-[160px]">
               <Link to={'/info'} className="">Об основателе</Link>
               <Link 
                 to={'#numbers'} 

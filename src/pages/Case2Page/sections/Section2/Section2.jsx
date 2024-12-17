@@ -1,7 +1,6 @@
 import { FaCheck } from "react-icons/fa6"
 import case1_2 from "/images/case1_2.png"
 import case2 from "/images/case2_3.png"
-import case2_1 from "/images/case2_2.png"
 import Title from "../../../../components/Title/Title"
 const Section2 = () => {
   return (
@@ -34,7 +33,7 @@ const Section2 = () => {
                 </div>
               </div>
               {/* Right */}
-              <button className="w-[267px] 2xl:w-[350px] h-[70px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[20px] 2xl:text-[24px] rounded-[20px]">Консультация</button>
+              <button className="w-[267px] 2xl:w-[350px] h-[70px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[20px] 2xl:text-[24px] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#fff] hover:text-[#333] transition-all duration-150">Консультация</button>
             </div>
           </div>
 
