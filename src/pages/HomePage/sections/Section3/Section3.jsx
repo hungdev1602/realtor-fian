@@ -83,10 +83,12 @@ const Section3 = () => {
 
               <div className="absolute top-[15px] sm:top-[20px] right-[15px] sm:right-[20px]">
                 <div className="flex items-center gap-[10px]">
-                  <div className="w-[75px] sm:w-[110px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex items-center justify-center">Покупка</div>
+                  <div className="hidden w-[75px] sm:w-[110px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] sm:flex items-center justify-center">Покупка</div>
+                  <div className="w-[119px] sm:w-[110px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex sm:hidden items-center justify-center">Коммерческая</div>
                   <div className="hidden w-[110px] h-[40px] border border-[#fff] text-[#fff] rounded-[60px] sm:flex items-center justify-center">Ипотека</div>
                 </div>
-                <div className="w-[119px] sm:w-[182px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex items-center justify-center mt-[10px] ml-auto">Коммерческая</div>
+                <div className="hidden w-[119px] sm:w-[182px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] sm:flex items-center justify-center mt-[10px] ml-auto">Коммерческая</div>
+                <div className="w-[75px] sm:w-[182px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex sm:hidden items-center justify-center mt-[10px]">Покупка</div>
               </div>
 
               <Link 
@@ -105,10 +107,12 @@ const Section3 = () => {
 
               <div className="absolute top-[15px] sm:top-[20px] right-[15px] sm:right-[20px]">
                 <div className="flex items-center gap-[10px]">
-                  <div className="w-[75px] sm:w-[105px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex items-center justify-center">Аренда</div>
+                  <div className="hidden w-[75px] sm:w-[105px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] sm:flex items-center justify-center">Аренда</div>
+                  <div className="w-[111px] sm:w-[105px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex sm:hidden items-center justify-center">Продажа ГАБ</div>
                   <div className="hidden w-[162px] h-[40px] border border-[#fff] text-[#fff] rounded-[60px] 2xl:flex items-center justify-center">Капитализация</div>
                 </div>
-                <div className="w-[111px] sm:w-[182px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex items-center justify-center mt-[10px] ml-auto">Продажа ГАБ</div>
+                <div className="hidden w-[111px] sm:w-[182px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] sm:flex items-center justify-center mt-[10px] ml-auto">Продажа ГАБ</div>
+                <div className="w-[75px] sm:w-[182px] h-[28px] sm:h-[40px] border border-[#fff] text-[10px] sm:text-[16px] text-[#fff] rounded-[60px] flex sm:hidden items-center justify-center mt-[10px]">Аренда</div>
               </div>
 
               <Link 
