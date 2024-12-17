@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom"
 import redevelopment from "/images/redevelopment_1.png" 
 import redevelopment1 from "/images/redevelopment_2.png" 
+import risk1 from "/images/risk_1.png"
 import risk1_hover from "/images/risk_1-hover.png"
 import risk2 from "/images/risk_2.png"
+import risk2_hover from "/images/risk_2-hover.png"
 import risk3 from "/images/risk_3.png"
+import risk3_hover from "/images/risk_3-hover.png"
 import risk4 from "/images/risk_4.png"
+import risk4_hover from "/images/risk_4-hover.png"
 import FormEmail from "../../components/FormEmail/FormEmail"
 import Title from "../../components/Title/Title"
 import RiskItem from "../../components/RiskItem/RiskItem"
@@ -100,7 +104,7 @@ const RedevelopmentPage = () => {
               desc={`Системный анализ и оценка 
                 всех аспектов 
                 проектируемых изменений.`}
-              image={risk2}
+              image={risk1}
               image2={risk1_hover}
             />
             <RiskItem 
@@ -109,6 +113,7 @@ const RedevelopmentPage = () => {
                 соответствие строительным 
                 нормам и правилам.`}
               image={risk2}
+              image2={risk2_hover}
             />
             <RiskItem 
               title={`Минимизация 
@@ -117,6 +122,7 @@ const RedevelopmentPage = () => {
                 направленных на обеспечение 
                 финансовой устойчивости проекта.`}
               image={risk3}
+              image2={risk3_hover}
             />
             <RiskItem 
               title={`Минимизация 
@@ -125,6 +131,7 @@ const RedevelopmentPage = () => {
                 направленных на защиту 
                 прав и законных интересов.`}
               image={risk4}
+              image2={risk4_hover}
             />
           </div>
         </div>
