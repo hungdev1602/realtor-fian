@@ -76,10 +76,10 @@ const Footer = () => {
           <div className="flex gap-[20px] 2xl:gap-[40px] text-[#fff]">
             {/* Left */}
             <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '10px' }}>
-              <a href="https://yandex.ru/maps/org/mirea_rossiyskiy_tekhnologicheskiy_universit..." style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px' }}>МИРЭА, Российский технологический университет</a>
-              <a href="https://yandex.ru/maps/213/moscow/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '14px' }}>ВУЗ в Москве</a>
+              <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px' }}>МИРЭА, Российский технологический университет</a>
+              <a href="https://yandex.ru/maps/213/moscow/house/bolshoy_tishinskiy_pereulok_8s1/Z04YcwBoSUACQFtvfXt3eXVkbA==/?ll=37.578006%2C55.768957&utm_medium=mapframe&utm_source=maps&z=20" style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '14px' }}>ВУЗ в Москве</a>
               <iframe 
-                src="https://yandex.ru/map-widget/v1/?ll=37.480409%2C55.669986&mode=search&oid=1084832794&ol=biz&z=16.63" 
+                src="https://yandex.ru/map-widget/v1/?ll=37.578006%2C55.768957&mode=whatshere&whatshere[point]=37.578055%2C55.768978&whatshere[zoom]=17&z=20" 
                 width={widthForVideo} 
                 height={height} 
                 frameborder="1" 
