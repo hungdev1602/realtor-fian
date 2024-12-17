@@ -17,29 +17,31 @@ const Case2Page = () => {
   ]
   return (
     <>
-      <div className="container mx-auto mt-[40px]">
-        {/* Sub link */}
-        <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[10px] sm:text-[24px] bg-[#fff]">
-          <Link to={'/'}>Основное</Link>
-          /
-          <Link to={'/info'}>Кейсы</Link>
-          /
-          <Link to={'/case2'}>БЦ СЗАО</Link>
-        </span>
-
-        <SectionFirst 
-          card={cards}
-          title={"Покупка офиса в БЦ СЗАО"}
-          subtitle={`Помещение покупали за 6 месяцев до окнчания реконстуркции 
-            в ипотеку в бизнес-центре на Смольной 2`}
-          minititle={minititle}
-          image={case2}
-          btnTitle={`Читать подробнее`}
-        />
-
-        <Section1 />
+      <div className="bg-[#FBFBFB]">
+        <div className="container mx-auto mt-[40px]">
+          {/* Sub link */}
+          <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[10px] sm:text-[24px] bg-[#fff]">
+            <Link to={'/'}>Основное</Link>
+            /
+            <Link to={'/info'}>Кейсы</Link>
+            /
+            <Link to={'/case2'}>БЦ СЗАО</Link>
+          </span>
+  
+          <SectionFirst 
+            card={cards}
+            title={"Покупка офиса в БЦ СЗАО"}
+            subtitle={`Помещение покупали за 6 месяцев до окнчания реконстуркции 
+              в ипотеку в бизнес-центре на Смольной 2`}
+            minititle={minititle}
+            image={case2}
+            btnTitle={`Читать подробнее`}
+          />
+  
+          <Section1 />
+        </div>
+        <Section2 />
       </div>
-      <Section2 />
     </>
   )
 }

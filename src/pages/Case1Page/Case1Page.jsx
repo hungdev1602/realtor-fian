@@ -19,30 +19,32 @@ const Case1Page = () => {
   ]
   return (
     <>
-      <div className="container mx-auto mt-[40px]">
-        {/* Sub link */}
-        <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[10px] sm:text-[24px] bg-[#fff]">
-          <Link to={'/'}>Основное</Link>
-          /
-          <Link to={'/info'}>Кейсы</Link>
-          /
-          <Link to={'/case1'}>БЦ ЗАО</Link>
-        </span>
-
-        <SectionFirst 
-          card={cards}
-          title={"Покупка офиса в Бц ЗАО"}
-          subtitle={`Покупка помещения от 268 кв. м. с выгодой 35 млн. руб. 
-            в современном бизнес-центре`}
-          minititle={minititle}
-          image={case1}
-          btnTitle={`Читать подробнее`}
-        />
-
-        <Section1 />
-        <Section2 />
+      <div className="bg-[#ECECEC]">
+        <div className="container mx-auto mt-[40px]">
+          {/* Sub link */}
+          <span className="p-[10px] sm:p-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] rounded-[20px] text-[10px] sm:text-[24px] bg-[#fff]">
+            <Link to={'/'}>Основное</Link>
+            /
+            <Link to={'/info'}>Кейсы</Link>
+            /
+            <Link to={'/case1'}>БЦ ЗАО</Link>
+          </span>
+  
+          <SectionFirst 
+            card={cards}
+            title={"Покупка офиса в Бц ЗАО"}
+            subtitle={`Покупка помещения от 268 кв. м. с выгодой 35 млн. руб. 
+              в современном бизнес-центре`}
+            minititle={minititle}
+            image={case1}
+            btnTitle={`Читать подробнее`}
+          />
+  
+          <Section1 />
+          <Section2 />
+        </div>
+        <Section3 />
       </div>
-      <Section3 />
     </>
   )
 }
