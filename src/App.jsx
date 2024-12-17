@@ -11,10 +11,19 @@ import Case1Page from "./pages/Case1Page/Case1Page";
 import Case2Page from "./pages/Case2Page/Case2Page";
 import Case3Page from "./pages/Case3Page/Case3Page";
 import ScrollToTop from "./ScrollToTop";
+import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
+import { useState } from "react";
 const App = () => {
+  const [openBurgerMenu, setOpenBurgerMenu] = useState(false)
   return (
     <>
-      <Header />
+      <BurgerMenu 
+        openBurgerMenu={openBurgerMenu}
+        setOpenBurgerMenu={setOpenBurgerMenu}
+      />
+      <Header 
+        setOpenBurgerMenu={setOpenBurgerMenu}
+      />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />

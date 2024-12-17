@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import logo from "/images/logo_fian.png"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
-const Header = () => {
+const Header = ({ setOpenBurgerMenu }) => {
   const navigate = useNavigate()
   const handleScrollToSection = (e, href) => {
     if (href.startsWith("#")) {
@@ -63,12 +64,15 @@ const Header = () => {
               </Link>
             </div>
   
-            <div className="flex items-center gap-[20px]">
+            <div className="flex items-center gap-[10px] sm:gap-[20px]">
               <Link to='/' className="inline-block py-[9px] sm:py-[14px] px-[20px] sm:px-[40px] lg:px-[70px] 2xl:px-[81px] text-[10px] sm:text-[16px] text-[#fff] bg-[#333333] rounded-[10px] sm:rounded-[15px]">
                 Связаться
               </Link>
   
-              <button className="inline-block lg:hidden">
+              <button 
+                className="inline-block lg:hidden"
+                onClick={() => setOpenBurgerMenu(true)}
+              >
                 <RxHamburgerMenu size={25}/>
               </button>
             </div>
