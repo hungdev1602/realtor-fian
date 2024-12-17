@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import Popup from 'reactjs-popup';
 import FormEmailPopup from '../FormEmailPopup/FormEmailPopup';
-import 'reactjs-popup/dist/index.css';
+import "./style.scss"
 const PopupForm = ({ title }) => {
   return (
     <>
