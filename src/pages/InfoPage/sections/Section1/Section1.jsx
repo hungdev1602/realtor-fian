@@ -4,6 +4,7 @@ import BoxInfoTransparent from "../../../../components/BoxInfoTransparent/BoxInf
 import { Link } from "react-router-dom";
 import { RiTelegram2Line } from "react-icons/ri";
 import './styles.scss'
+import PopupForm from "../../../../components/PopupForm/PopupForm";
 const Section1 = () => {
   const text = `Партнер национального центра 
   реконструкций и перепланировок`
@@ -27,8 +28,13 @@ const Section1 = () => {
             <img src={founder2} alt="" className="w-full h-full object-cover"/>
 
             <Link 
-              to='/' 
+              to='#email' 
               className="hidden sm:block py-[15px] xl:py-[25px] 2xl:py-[30px] px-[80px] xl:px-[120px] 2xl:px-[211px] absolute bottom-[34px] left-[40px] right-[40px] text-[15px] 2xl:text-[20px] bg-[#f6f5f5db] rounded-[15px] xl:rounded-[20px] cursor-pointer info"
+              onClick={() => {
+                const element = document.getElementById('email');
+                const offset = element.getBoundingClientRect().top + window.scrollY - 150;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+              }}
             >
               Получить консультацию
             </Link>

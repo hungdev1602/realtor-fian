@@ -11,15 +11,15 @@ const Section6 = () => {
         <div className="flex flex-col gap-[20px]">
           <FAQItem
             question={'Какая география вашей работы?'}
-            answer={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quibusdam molestiae, distinctio iusto ea repellat illo vel dicta iste sint enim non sit nam, ad aut natus itaque sequi numquam.'}
+            answer={'Москва и Мо.'}
           />
           <FAQItem
             question={'Можете ли вы помочь с получением ипотеки?'}
-            answer={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quibusdam molestiae, distinctio iusto ea repellat illo vel dicta iste sint enim non sit nam, ad aut natus itaque sequi numquam.'}
+            answer={'Да, мы сотрудничаем с большим количеством банков и найдем максимально выгодный вариант для вас.'}
           />
           <FAQItem
             question={'Какие у вас гарантии безопасности и доходности?'}
-            answer={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quibusdam molestiae, distinctio iusto ea repellat illo vel dicta iste sint enim non sit nam, ad aut natus itaque sequi numquam.'}
+            answer={'У нас работают лучшие брокеры и страховщики с огромным стажем, а наш основатель имеет опыт с 1989 года и является практиком на рынке.'}
           />
         </div>
       </div>

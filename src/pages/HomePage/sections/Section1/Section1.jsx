@@ -3,6 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import founder from "/images/Founder_1.png"
 import './styles.scss'
 import BoxInfoTransparent from "../../../../components/BoxInfoTransparent/BoxInfoTransparent";
+import PopupForm from "../../../../components/PopupForm/PopupForm";
 const Section1 = () => {
   return (
     <>
@@ -50,12 +51,7 @@ const Section1 = () => {
           </div>
 
           <div className="mt-[30px] xl:mt-[45px] 2xl:mt-[60px]">
-            <Link 
-              to={'/'}
-              className="flex lg:inline-flex w-[100%] lg:w-[255px] xl:w-[300px] 2xl:w-[350px] h-[50px] xl:h-[60px] 2xl:h-[75px] justify-center items-center bg-[#333] rounded-[10px] sm:rounded-[15px] xl:rounded-[20px] text-[18px] xl:text-[20px] 2xl:text-[24px] text-[#fff] font-[500] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#fff] hover:text-[#333] transition-all duration-150"
-            >
-              Начать работу
-            </Link>
+            <PopupForm title={'Начать работу'}/>
           </div>
         </div>
       </div>

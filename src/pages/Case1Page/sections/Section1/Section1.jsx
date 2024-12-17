@@ -1,3 +1,4 @@
+import PopupForm from "../../../../components/PopupForm/PopupForm"
 import Title from "../../../../components/Title/Title"
 import case1 from "/images/case1_1.png"
 import case1_2 from "/images/case1_2.png"
@@ -178,7 +179,7 @@ const Section1 = () => {
                 </div>
               </div>
               {/* Right */}
-              <button className="w-[290px] 2xl:w-[350px] h-[70px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[20px] 2xl:text-[24px] rounded-[20px]">Консультация</button>
+              <PopupForm title={'Консультация'}/>
             </div>
           </div>
         </div>

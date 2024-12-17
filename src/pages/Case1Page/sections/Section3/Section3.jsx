@@ -1,6 +1,7 @@
 import { FaCheck } from "react-icons/fa6"
 import Title from "../../../../components/Title/Title"
 import case1_2 from "/images/case1_2.png"
+import PopupForm from "../../../../components/PopupForm/PopupForm"
 const Section3 = () => {
   const text = [
     {
@@ -187,7 +188,7 @@ const Section3 = () => {
                 </div>
               </div>
               {/* Right */}
-              <button className="w-[290px] 2xl:w-[350px] h-[70px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[20px] 2xl:text-[24px] rounded-[20px]">Консультация</button>
+              <PopupForm title={'Консультация'}/>
             </div>
           </div>
         </div>
@@ -204,7 +205,7 @@ const Section3 = () => {
           <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
             <FaCheck /> Довольный клиент
           </div>
-          <button className="w-full 2xl:w-[350px] h-[50px] 2xl:h-[75px] inline-flex items-center justify-center bg-[#333] text-[#fff] text-[14px] 2xl:text-[24px] rounded-[20px] mt-[15px]">Консультация</button>
+          <PopupForm title={'Консультация'}/>
         </div>
       </div>
     </>

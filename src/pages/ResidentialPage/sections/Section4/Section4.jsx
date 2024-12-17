@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import PopupForm from "../../../../components/PopupForm/PopupForm"
+
 const Section4 = (props) => {
   const {
     title,
@@ -143,11 +145,7 @@ const Section4 = (props) => {
           </div>
         </div>
         
-        <button 
-          className="w-full sm:w-auto inline-block py-[17px] sm:py-[23px] px-[113px] 2xl:px-[100px] bg-[#333333] text-[20px] 2xl:text-[24px] text-[#fff] rounded-[20px] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] hover:bg-[#fff] hover:text-[#333] transition-all duration-150"
-        >
-          {btnTitle}
-        </button>
+        <PopupForm title={btnTitle}/>
       </div>
     </>
   )

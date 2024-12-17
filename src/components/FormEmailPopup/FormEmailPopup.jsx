@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import test from "/images/test.png"
 import video from "/images/video.mp4"
-const FormEmail = () => {
+const FormEmailPopup = () => {
   return (
     <>
-      <div className="mt-[80px] sm:mt-[120px]" id="email">
+      <div className={"mt-0 w-[330px] sm:w-auto transition-all duration-500 linear "}>
         <div className="h-[360px] sm:h-[550px] bg-[#DCDADA] rounded-[20px] pt-[20px] md:pt-[40px] pl-[20px] md:pl-[40px] pr-[20px] md:pr-0 flex flex-wrap xl:flex-nowrap">
           {/* Left */}
           <div className="w-full md:flex-1 relative z-[2]">
@@ -52,4 +53,4 @@ const FormEmail = () => {
   )
 }
 
-export default FormEmail
+export default FormEmailPopup
