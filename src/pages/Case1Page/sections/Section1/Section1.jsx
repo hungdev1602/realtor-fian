@@ -41,7 +41,7 @@ const Section1 = () => {
         <div className="flex flex-wrap xl:flex-nowrap gap-[30px] 2xl:gap-[63px]">
           {/* Left */}
           <div className="w-full xl:w-[339px] 2xl:w-[550px] h-auto xl:h-[428px] 2xl:h-[603px] truncate rounded-none sm:rounded-[20px]">
-            <div className="block sm:hidden w-[951px] text-[11px] 2xl:text-[32px] font-[400] mt-0 2xl:mt-[55px] leading-[14px]">По запрошенным критериям помещения на рынке в столице не<br /> нашлось и клиент принял решение купить помещение.</div>
+            <div className="block sm:hidden w-[951px] text-[12px] 2xl:text-[32px] font-[400] mt-0 2xl:mt-[55px] leading-[14px]">По запрошенным критериям помещения на рынке в столице не<br /> нашлось и клиент принял решение <b>купить помещение.</b></div>
             <img src={case1} alt="" className="hidden sm:block w-full h-full object-cover"/>
           </div>
 

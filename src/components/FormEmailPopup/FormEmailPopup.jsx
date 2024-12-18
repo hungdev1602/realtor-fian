@@ -44,7 +44,7 @@ const FormEmailPopup = () => {
 
           {/* Right */}
           <div className="w-[360px] sm:w-[772px] 2xl:w-[598px] h-[198px] sm:h-[476px] 2xl:h-[490px] mt-[-210px] sm:mt-[-500px] xl:mt-0 relative z-[1]">
-            <video src={video} alt="" className="hidden sm:block w-full h-full object-cover rounded-[26px]" autoPlay loop muted />
+            <video src={video} alt="" className="hidden sm:block w-full h-full object-cover rounded-[26px]" autoPlay loop muted playsInline />
             <img src={test} alt="" className="block sm:hidden w-full h-full object-cover"/>
           </div>
         </div>

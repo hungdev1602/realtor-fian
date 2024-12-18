@@ -10,6 +10,11 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const handleScrollToSection = (e, href) => {
+    if(href === "#footer"){
+      window.scrollTo({ top: document.querySelector(href).offsetTop - 150, behavior: 'smooth' });
+      setOpenBurgerMenu(false)
+      return;
+    }
     if (href.startsWith("#")) {
       e.preventDefault();
       // Chuyển hướng về trang chính
@@ -34,7 +39,11 @@ const BurgerMenu = ({ openBurgerMenu, setOpenBurgerMenu }) => {
             </div>
             <div className="">
               <div className="flex items-center gap-[10px]">
-                <Link to='/' className="inline-block py-[9px] sm:py-[14px] px-[20px] sm:px-[40px] lg:px-[70px] 2xl:px-[81px] text-[10px] sm:text-[16px] text-[#fff] bg-[#333333] rounded-[10px] sm:rounded-[15px]">
+                <Link 
+                  to='#footer' 
+                  className="inline-block py-[9px] sm:py-[14px] px-[20px] sm:px-[40px] lg:px-[70px] 2xl:px-[81px] text-[10px] sm:text-[16px] text-[#fff] bg-[#333333] rounded-[10px] sm:rounded-[15px]"
+                  onClick={(e) => handleScrollToSection(e, "#footer")}
+                >
                   Связаться
                 </Link>
     

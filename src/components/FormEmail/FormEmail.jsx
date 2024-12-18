@@ -7,7 +7,7 @@ const FormEmail = () => {
         <div className="h-[360px] sm:h-[550px] bg-[#DCDADA] rounded-[20px] pt-[20px] md:pt-[40px] pl-[20px] md:pl-[40px] pr-[20px] md:pr-0 flex flex-wrap xl:flex-nowrap">
           {/* Left */}
           <div className="w-full md:flex-1 relative z-[2]">
-            <div className="text-[23px] sm:text-[30px] 2xl:text-[38px] font-[500]">Превратим вашу недвижимость в актив</div>
+            <div className="text-[23px] sm:text-[27px] 2xl:text-[38px] font-[500]">Превратим вашу недвижимость в актив</div>
             <div className="text-[12px] sm:text-[20px] font-[400] font-avenir">От хорошего к лучшему</div>
 
             <form className="mt-[15px] sm:mt-[42px] w-full md:w-[590px]">
@@ -42,8 +42,8 @@ const FormEmail = () => {
           </div>
 
           {/* Right */}
-          <div className="w-[360px] sm:w-[772px] 2xl:w-[598px] h-[198px] sm:h-[476px] 2xl:h-[490px] mt-[-210px] sm:mt-[-500px] xl:mt-0 relative z-[1]">
-            <video src={video} alt="" className="hidden sm:block w-full h-full object-cover rounded-[26px]" autoPlay loop muted />
+          <div className="w-[360px] sm:w-[772px] 2xl:w-[598px] h-[198px] sm:h-[470px] 2xl:h-[490px] mt-[-210px] sm:mt-[-500px] xl:mt-0 relative z-[1]">
+            <video src={video} alt="" className="hidden sm:block w-full h-full object-cover rounded-[26px]" autoPlay loop muted playsInline />
             <img src={test} alt="" className="block sm:hidden w-full h-full object-cover"/>
           </div>
         </div>

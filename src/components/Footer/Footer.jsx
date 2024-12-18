@@ -71,11 +71,11 @@ const Footer = () => {
   };
   return (
     <>
-      <footer className="mt-[80px] sm:mt-[120px] bg-[#A2999E] py-[40px]">
+      <footer className="mt-[80px] sm:mt-[120px] bg-[#A2999E] py-[40px]" id="footer">
         <div className="container mx-auto">
           <div className="flex gap-[20px] 2xl:gap-[40px] text-[#fff]">
             {/* Left */}
-            <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '10px' }}>
+            <div style={{ position: 'relative', overflow: 'hidden', borderRadius: '20px' }}>
               <a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '0px' }}>МИРЭА, Российский технологический университет</a>
               <a href="https://yandex.ru/maps/213/moscow/house/bolshoy_tishinskiy_pereulok_8s1/Z04YcwBoSUACQFtvfXt3eXVkbA==/?ll=37.578006%2C55.768957&utm_medium=mapframe&utm_source=maps&z=20" style={{ color: '#eee', fontSize: '12px', position: 'absolute', top: '14px' }}>ВУЗ в Москве</a>
               <iframe 
@@ -96,23 +96,23 @@ const Footer = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[10px] sm:gap-[20px]">
                   {/* Socials */}
                   <div className="flex items-center gap-[4px] sm:gap-[8px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
-                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><RiTelegram2Line size={size}/></Link>
-                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaWhatsapp size={size}/></Link>
-                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaInstagram size={size}/></Link>
-                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaXTwitter  size={size}/></Link>
-                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[30px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaYoutube size={size}/></Link>
+                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[39px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><RiTelegram2Line size={size}/></Link>
+                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[39px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaWhatsapp size={size}/></Link>
+                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[39px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaInstagram size={size}/></Link>
+                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[39px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaXTwitter  size={size}/></Link>
+                    <Link to={'/'} target="_blank" className="w-[20px] sm:w-[39px] 2xl:w-[40px] h-[20px] sm:h-[30px] 2xl:h-[40px] bg-[#fff] text-[#000] flex items-center justify-center rounded-[5px] sm:rounded-[10px]"><FaYoutube size={size}/></Link>
                   </div>
                   {/* Address */}
-                  <div className="w-[166px] sm:w-[158px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                  <div className="w-[166px] sm:w-[161px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
                     <FaMapMarkerAlt size={size}/> Большой тишинский 8с1
                   </div>
                   {/* Email */}
-                  <div className="w-[166px] sm:w-[158px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                  <div className="w-[166px] sm:w-[161px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
                     <MdOutlineEmail size={size}/> fianrealestate@yandex.ru
                   </div>
                   {/* Phone */}
-                  <div className="w-[166px] sm:w-[158px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
-                    <FiPhone size={size} className="mr-[18px] sm:mr-[32px]"/> +7 999 999 99 99
+                  <div className="w-[166px] sm:w-[161px] 2xl:w-[237px] flex items-center gap-[8px] pl-[6px] bg-[#fff] text-[#000] font-[400] rounded-[10px] h-[25px] sm:h-[30px] 2xl:h-[40px]">
+                    <FiPhone size={size} className="mr-[18px] sm:mr-[14px] 2xl:mr-[32px]"/> +7 999 999 99 99
                   </div>
                 </div>
                 {/* Right schedule */}

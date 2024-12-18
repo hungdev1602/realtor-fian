@@ -20,7 +20,7 @@ const Section1 = (props) => {
             <div className="hidden sm:flex items-center gap-[15px] mb-[30px]">
               {card.map((item, index) => (
                 <span 
-                  className="py-[8px] px-[20px] border border-[#000000CC] rounded-[50px] text-[14px] xl:text-[18px] 2xl:text-[20px]"
+                  className="py-[8px] px-[20px] border border-[#000000CC] rounded-[50px] text-[14px] xl:text-[16px] 2xl:text-[20px]"
                   key={index}
                 >
                   {item}

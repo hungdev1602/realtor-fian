@@ -6,6 +6,10 @@ import { useNavigate } from 'react-router-dom';
 const Header = ({ setOpenBurgerMenu }) => {
   const navigate = useNavigate()
   const handleScrollToSection = (e, href) => {
+    if(href === "#footer"){
+      window.scrollTo({ top: document.querySelector(href).offsetTop - 150, behavior: 'smooth' });
+      return;
+    }
     if (href.startsWith("#")) {
       e.preventDefault();
       // Chuyển hướng về trang chính
@@ -29,7 +33,7 @@ const Header = ({ setOpenBurgerMenu }) => {
               />
             </Link>
   
-            <div className="hidden lg:flex items-center gap-[40px] p-[39px] 2xl:p-[40px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] 2xl:ml-[160px]">
+            <div className="hidden lg:flex items-center gap-[40px] p-[39px] 2xl:p-[38px] bg-[#fff] rounded-[20px] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.25)] 2xl:ml-[160px]">
               <Link to={'/info'} className="">Об основателе</Link>
               <Link 
                 to={'#numbers'} 
@@ -65,7 +69,11 @@ const Header = ({ setOpenBurgerMenu }) => {
             </div>
   
             <div className="flex items-center gap-[10px] sm:gap-[20px]">
-              <Link to='/' className="inline-block py-[9px] sm:py-[14px] px-[20px] sm:px-[40px] lg:px-[70px] 2xl:px-[81px] text-[10px] sm:text-[16px] text-[#fff] bg-[#333333] rounded-[10px] sm:rounded-[15px]">
+              <Link 
+                to='#footer' 
+                className="inline-block py-[9px] sm:py-[14px] px-[20px] sm:px-[40px] lg:px-[70px] 2xl:px-[81px] text-[10px] sm:text-[16px] text-[#fff] bg-[#333333] rounded-[10px] sm:rounded-[15px]"
+                onClick={(e) => handleScrollToSection(e, '#footer')}
+              >
                 Связаться
               </Link>
   

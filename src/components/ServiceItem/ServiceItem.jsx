@@ -38,7 +38,7 @@ const ServiceItem = (props) => {
         className={`w-full xl:w-[580px] 2xl:w-[790px] h-[150px] sm:h-[299px] rounded-[20px] bg-[#fff] ${shadow ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]' : ''} transition-shadow duration-1000 px-[15px] sm:px-[40px] pt-[15px] sm:pt-[40px] relative`} 
         ref={elementRef}
       >
-        <div className="text-[18px] sm:text-[30px] 2xl:text-[42px] font-[500]">{title}</div>
+        <div className="text-[18px] sm:text-[28px] 2xl:text-[42px] font-[500]">{title}</div>
         <div className="w-[217px] sm:w-full text-[12px] sm:text-[18px] font-[400] mt-[0px] sm:mt-[20px] whitespace-normal sm:whitespace-pre-line">{desc}</div>
         
         <Link 

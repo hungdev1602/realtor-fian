@@ -79,6 +79,7 @@ const Section3 = () => {
           <div 
             className={`w-auto md:w-[390px] 2xl:w-[520px] h-[163px] sm:h-[222px] 2xl:h-[250px] bg-[#8F4449] rounded-[20px] flex items-center justify-center relative cursor-pointer ${shadow ? 'shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]' : ''} transition-shadow duration-1000`}
             ref={elementRef}
+            onClick={() => window.scrollTo({ top: document.querySelector('#email').offsetTop - 150, behavior: 'smooth' })}
           >
             <div className="text-[14px] sm:text-[28px] 2xl:text-[32px] font-[600] text-[#fff]">Получить ипотеку</div>
             <Link 
