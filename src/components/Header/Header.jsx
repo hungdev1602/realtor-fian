@@ -22,7 +22,7 @@ const Header = ({ setOpenBurgerMenu }) => {
   };
   return (
     <>
-      <header className="py-[10px] sm:py-[20px] sticky top-0 left-0 right-0 bg-transparent z-[999]">
+      <header className="py-[10px] sm:py-[20px] sticky top-0 left-0 right-0 bg-[#F3F3F3] z-[999]">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <Link to='/' className="w-[28px] h-[32px] sm:w-[60px] sm:h-[70px] 2xl:w-[73px] 2xl:h-[83px]">
