@@ -54,7 +54,7 @@ const Section2 = () => {
           <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
             <FaCheck /> Сейчас это помещение стоит 25 миллионов рублей
           </div>
-          <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
+          <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400] mb-[15px]">
             <FaCheck /> Довольный клиент
           </div>
           <PopupForm title={'Консультация'}/>

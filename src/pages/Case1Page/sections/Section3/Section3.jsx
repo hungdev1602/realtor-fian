@@ -202,7 +202,7 @@ const Section3 = () => {
           <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
             <FaCheck /> Сделка оформлена за 1 неделю
           </div>
-          <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400]">
+          <div className="flex items-center gap-[7px] mt-[10px] text-[12px] font-[400] mb-[15px]">
             <FaCheck /> Довольный клиент
           </div>
           <PopupForm title={'Консультация'}/>
